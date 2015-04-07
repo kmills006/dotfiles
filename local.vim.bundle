@@ -1,0 +1,7 @@
+Bundle 'rking/ag.vim'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'kana/vim-textobj-entire'
+Bundle 'Rykka/lastbuf.vim'
+Bundle 'bkad/CamelCaseMotion'
