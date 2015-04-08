@@ -36,6 +36,7 @@ set nogdefault
 
 " ----- let . be a seperator
 set iskeyword-=_
+set iskeyword-=.
 
 " ----- Quick search do not make move, only search and high light
 nnoremap * *``
