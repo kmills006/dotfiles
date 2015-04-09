@@ -26,5 +26,5 @@ alias gap='git stash apply --index'
 
 # log
 alias gl='git log'
-alias glo='git log --pretty=format:"%h - %an, %ar : %s"'
+alias glo='git log --oneline --decorate --all'
 alias glc='git log --pretty=format:"%s"'

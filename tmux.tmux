@@ -52,7 +52,7 @@ set -g mouse-resize-pane on
 set-window-option -g xterm-keys on
 
 # switch to last pane
-bind-key C-a last-pane
+# bind-key C-a last-pane
 
 # Make copy and pasting on mac work. <prefix>[ to start mode
 # also use vim mode when in copy mode

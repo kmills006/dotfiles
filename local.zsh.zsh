@@ -18,4 +18,6 @@ zle -N exit
 bindkey "^Q" exit
 
 alias wtf='top -o CPU'
+alias q='exit'
+alias vims='vim -S Session.vim'
 export EDITOR='vim'

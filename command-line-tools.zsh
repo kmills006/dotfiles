@@ -1,5 +1,5 @@
 # Add hub to git alias
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 # Other useful aliases
 alias c='clear'

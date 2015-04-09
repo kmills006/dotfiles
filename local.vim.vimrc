@@ -35,8 +35,8 @@ vnoremap / /\V
 set nogdefault
 
 " ----- let . be a seperator
-set iskeyword-=_
 set iskeyword-=.
+set iskeyword+=_
 
 " ----- Quick search do not make move, only search and high light
 nnoremap * *``
@@ -67,5 +67,15 @@ nnoremap <c-w><c-p> :LastBuf<CR>
 nmap <leader>o :NERDTreeFind<CR>
 
 " command p
-nmap <leader>p :CtrlP<CR>
+nmap <leader>p :CtrlPClearCache<CR>:CtrlP<CR>
 
+" ----- Copy current path relative, absolute, filename
+nnoremap cpa :let @+ = expand("%:p")<CR>
+nnoremap cpr :let @+ = expand("%")<CR>
+nnoremap cpn :let @+ = expand("%:t")<CR>
+
+UnBundle 'NERDCommenter'
+
+" ----- commentary
+nmap <leader>c gcc
+vmap <leader>c gc
