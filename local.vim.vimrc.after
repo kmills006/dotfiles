@@ -10,7 +10,6 @@ nnoremap gl gt
 inoremap <c-b> <ESC>hli
 inoremap <c-f> <ESC>lli
 inoremap <c-j> <CR><ESC>O
-inoremap <c-k> <ESC>O
 
 " ----- leader
 let mapleader="\\"
@@ -88,3 +87,7 @@ colorscheme seoul256
 
 " ----- let . be a seperator
 set iskeyword -=.
+
+" ----- let switch ^ and 0
+nnoremap 0 ^
+nnoremap ^ 0
