@@ -49,6 +49,10 @@ inoremap <c-s> <Esc>:w<CR>l
 nnoremap <c-s> <Esc>:w<CR>
 vnoremap <c-s> <Esc>:w<CR>
 
+" change "" and '' back and force
+nmap <leader>' cs"'
+nmap <leader>" cs'"
+
 " quit
 nnoremap <c-q> :q<cr>
 
@@ -79,3 +83,5 @@ UnBundle 'NERDCommenter'
 " ----- commentary
 nmap <leader>c gcc
 vmap <leader>c gc
+
+set wrap

@@ -1,5 +1,5 @@
 # Add hub to git alias
-# eval "$(hub alias -s)"
+eval "$(hub alias -s)"
 
 # Other useful aliases
 alias c='clear'
@@ -10,12 +10,17 @@ alias ll='ls -GFhl' # Same as above, but in long listing format
 alias ~='cd ~'
 
 # Git aliases
+alias ga='git add'
+alias gpush='git push'
+alias gpull='git pull'
 alias gl='git log'
 alias gs='git status'
 alias gd='git diff'
 alias gm='git commit -m'
+alias gam='git commit -am'
 alias gb='git branch'
 alias gc='git checkout'
+alias gcb='git checkout -b'
 
 # Show the total number of commits
 alias gsh="git shortlog | grep -E '^[  ]+\w+' | wc -l"

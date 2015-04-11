@@ -1,3 +1,4 @@
+UnBundle 'scrooloose/nerdcommenter'
 Bundle 'rking/ag.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'nelstrom/vim-textobj-rubyblock'

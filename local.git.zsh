@@ -1,3 +1,5 @@
+unalias git > /dev/null 2>&1
+
 alias gs='git status'
 alias ga='git add -A'
 alias gb='git branch'
