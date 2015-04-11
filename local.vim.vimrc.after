@@ -21,6 +21,7 @@ nnoremap <leader>ss :SaveSession<CR>
 nnoremap <Leader>r :call RenameFile()<cr>
 nnoremap S i<CR><Esc>
 
+
 " ----- find next
 nnoremap <c-f> ;
 
@@ -33,10 +34,6 @@ cnoremap <c-a> <C-b>
 nnoremap / /\V
 vnoremap / /\V
 set nogdefault
-
-" ----- let . be a seperator
-set iskeyword-=.
-set iskeyword+=_
 
 " ----- Quick search do not make move, only search and high light
 nnoremap * *``
@@ -85,3 +82,9 @@ nmap <leader>c gcc
 vmap <leader>c gc
 
 set wrap
+
+set colorcolumn=80
+colorscheme seoul256
+
+" ----- let . be a seperator
+set iskeyword -=.
