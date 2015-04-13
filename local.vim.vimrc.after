@@ -39,8 +39,6 @@ set nogdefault
 nnoremap * *``
 nnoremap # *``
 
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-
 " save usint ctrl-s in insert mode
 inoremap <c-s> <Esc>:w<CR>l
 nnoremap <c-s> <Esc>:w<CR>
@@ -59,6 +57,7 @@ nnoremap <C-w><C-w> <C-w>v
 " ----- permernent macros
 " change ruby syntax
 let @r = ';%s/:\(\w\+\)\(\s*\)=>/\1:/g'
+" split arguments in brackets
 let @s = 'f(lSf)SkV:s/, /,\r/g=i)  '
 
 " -------------------- Plugins
@@ -76,7 +75,10 @@ nnoremap cpa :let @+ = expand("%:p")<CR>
 nnoremap cpr :let @+ = expand("%")<CR>
 nnoremap cpn :let @+ = expand("%:t")<CR>
 
+" Plugins ----------------------------------------
 UnBundle 'NERDCommenter'
+UnBundle 'spf13/vim-autoclose'
+Bundle 'jiangmiao/auto-pairs'
 
 " ----- commentary
 nmap <leader>c gcc
@@ -104,4 +106,5 @@ unmap <Leader>a=>
 map   <Leader>a=  :Tabularize /=<CR>
 
 " ----- EasyMotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap s <Plug>(easymotion-s)
