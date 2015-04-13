@@ -102,3 +102,6 @@ map   <Leader>a:  :Tabularize /:\zs <CR>
 
 unmap <Leader>a=>
 map   <Leader>a=  :Tabularize /=<CR>
+
+" ----- EasyMotion
+nmap s <Plug>(easymotion-s)
