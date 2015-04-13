@@ -58,6 +58,7 @@ nnoremap <C-w><C-w> <C-w>v
 " ----- permernent macros
 " change ruby syntax
 let @r = ';%s/:\(\w\+\)\(\s*\)=>/\1:/g'
+let @s = 'f(lSf)SkV:s/, /\r/g=i)  '
 
 " -------------------- Plugins
 " lastbuf
