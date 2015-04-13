@@ -9,10 +9,10 @@ nnoremap gl gt
 " ----- Navigation in insert mode
 inoremap <c-b> <ESC>hli
 inoremap <c-f> <ESC>lli
+inoremap <c-e> <ESC>A
 inoremap <c-j> <CR><ESC>O
 
 " ----- leader
-let mapleader="\\"
 map <space> \
 
 command! SaveSession :mks!
@@ -23,6 +23,7 @@ nnoremap S i<CR><Esc>
 
 " ----- find next
 nnoremap <c-f> ;
+vnoremap <c-f> ;
 
 " ----- command mode shortcut
 cnoremap <c-b> <Left>
@@ -58,7 +59,7 @@ nnoremap <C-w><C-w> <C-w>v
 " ----- permernent macros
 " change ruby syntax
 let @r = ';%s/:\(\w\+\)\(\s*\)=>/\1:/g'
-let @s = 'f(lSf)SkV:s/, /\r/g=i)  '
+let @s = 'f(lSf)SkV:s/, /,\r/g=i)  '
 
 " -------------------- Plugins
 " lastbuf
@@ -92,3 +93,12 @@ set iskeyword -=.
 " ----- let switch ^ and 0
 nnoremap 0 ^
 nnoremap ^ 0
+
+" ----- Tabularize
+map <leader>a :Tabularize /\V
+
+unmap <leader>a::
+map   <Leader>a:  :Tabularize /:\zs <CR>
+
+unmap <Leader>a=>
+map   <Leader>a=  :Tabularize /=<CR>

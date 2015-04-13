@@ -2,9 +2,6 @@
 let g:airline_powerline_fonts=1
 let g:airline#extensions#bufferline#enabled = 0
 
-" Map , to leader
-let mapleader = "\\"
-
 " Map jj to <Esc>
 :inoremap jj <Esc>
 
