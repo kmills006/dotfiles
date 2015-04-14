@@ -10,7 +10,6 @@ nnoremap gl gt
 inoremap <c-b> <ESC>hli
 inoremap <c-f> <ESC>lli
 inoremap <c-e> <ESC>A
-inoremap <c-j> <CR><ESC>O
 
 " ----- leader
 map <space> \
@@ -75,11 +74,6 @@ nnoremap cpa :let @+ = expand("%:p")<CR>
 nnoremap cpr :let @+ = expand("%")<CR>
 nnoremap cpn :let @+ = expand("%:t")<CR>
 
-" Plugins ----------------------------------------
-UnBundle 'NERDCommenter'
-UnBundle 'spf13/vim-autoclose'
-Bundle 'jiangmiao/auto-pairs'
-
 " ----- commentary
 nmap <leader>c gcc
 vmap <leader>c gc
@@ -108,3 +102,12 @@ map   <Leader>a=  :Tabularize /=<CR>
 " ----- EasyMotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap s <Plug>(easymotion-s)
+
+" ----- syntastic
+" disable html checker
+let g:syntastic_html_checkers=['']
+
+" ----- neocomplete
+" let g:neocomplcache_min_syntax_length = 1
+" let g:neocomplcache_min_keyword_length = 1
+let g:neocomplcache_auto_completion_start_length = 1
