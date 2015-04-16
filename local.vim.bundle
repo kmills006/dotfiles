@@ -1,8 +1,8 @@
+" UnBundle 'honza/vim-snippets' " remove this plugin
 UnBundle 'NERDCommenter'
 UnBundle 'spf13/vim-autoclose'
 UnBundle 'scrooloose/nerdcommenter'
 UnBundle 'gorodinskiy/vim-coloresque'
-" UnBundle 'honza/vim-snippets' " remove this plugin
 UnBundle 'Shougo/neosnippet-snippets'
 UnBundle 'bling/vim-bufferline'
 Bundle 'rking/ag.vim'
