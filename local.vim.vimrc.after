@@ -90,6 +90,9 @@ set iskeyword -=.
 nnoremap 0 ^
 nnoremap ^ 0
 
+" ----- do not use swap file, do not show warnings
+set noswapfile
+
 " ----- Tabularize
 map <leader>a :Tabularize /\V
 
@@ -107,5 +110,17 @@ nmap s <Plug>(easymotion-s)
 " disable html checker
 let g:syntastic_html_checkers=['']
 
+" fugitive
+nnoremap <silent> <leader>ga :Gwrite<CR>:w<CR>
+
 " ----- neocomplete
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_auto_select = 1
+
+" tab to expand, c-j to jump to next
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+imap <C-j> <Plug>(neosnippet_jump)
+imap <expr><Tab> pumvisible() ? "\<C-n>\<C-k>" : "  "
+
+inoremap <expr><Esc> pumvisible() ? "\<C-y>\<Esc><Right>" : "\<Esc>"
+inoremap <Esc> <Esc>l
