@@ -110,7 +110,7 @@ nmap s <Plug>(easymotion-s)
 " disable html checker
 let g:syntastic_html_checkers=['']
 
-" fugitive
+" ----- fugitive
 nnoremap <silent> <leader>ga :Gwrite<CR>:w<CR>
 
 " ----- neocomplete
@@ -124,3 +124,25 @@ imap <expr><Tab> pumvisible() ? "\<C-n>\<C-k>" : "  "
 
 inoremap <expr><Esc> pumvisible() ? "\<C-y>\<Esc><Right>" : "\<Esc>"
 inoremap <Esc> <Esc>l
+
+" ----- vim-airline
+let g:airline_section_a = airline#section#create(['mode'])
+let g:airline_section_y = airline#section#create(['%L'])
+let g:airline#extensions#default#section_truncate_width = { 'x': 30, 'y': 30 }
+let g:airline#extensions#default#layout = [
+  \ ['a', 'c'],
+  \ ['x', 'y', 'warning']
+  \ ]
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V',
+  \ '' : 'V',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
