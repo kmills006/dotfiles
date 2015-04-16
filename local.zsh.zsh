@@ -20,4 +20,5 @@ bindkey "^Q" exit
 alias wtf='top -o CPU'
 alias q='exit'
 alias vims='vim -S Session.vim'
+alias m='meteor'
 export EDITOR='vim'
