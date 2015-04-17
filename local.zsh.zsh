@@ -25,3 +25,7 @@ alias vims='vim -S Session.vim'
 alias m='meteor'
 export EDITOR='vim'
 
+# for rails, we can run rake instead of bin/rake
+# make sure you run bundle install --binstubs first
+PATH=$PATH:./bin
+

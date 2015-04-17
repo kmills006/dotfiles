@@ -10,6 +10,7 @@ nnoremap gl gt
 inoremap <c-b> <ESC>hli
 inoremap <c-f> <ESC>lli
 inoremap <c-e> <ESC>A
+inoremap <c-a> <ESC>I
 
 " ----- leader
 map <space> \
@@ -38,7 +39,7 @@ set nogdefault
 nnoremap * *``
 nnoremap # *``
 
-" save usint ctrl-s in insert mode
+" save using ctrl-s in insert mode
 inoremap <c-s> <Esc>:w<CR>l
 nnoremap <c-s> <Esc>:w<CR>
 vnoremap <c-s> <Esc>:w<CR>
