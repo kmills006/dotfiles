@@ -17,8 +17,11 @@ exit () {
 zle -N exit
 bindkey "^Q" exit
 
+# copy dir
+alias pwdc='echo "cd $(pwd)" | pbcopy'
 alias wtf='top -o CPU'
 alias q='exit'
 alias vims='vim -S Session.vim'
 alias m='meteor'
 export EDITOR='vim'
+

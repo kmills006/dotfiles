@@ -102,6 +102,9 @@ map   <Leader>a:  :Tabularize /:\zs <CR>
 unmap <Leader>a=>
 map   <Leader>a=  :Tabularize /=<CR>
 
+unmap <leader>a,,
+map   <Leader>a,  :Tabularize /,\zs<CR>
+
 " ----- EasyMotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap s <Plug>(easymotion-s)
@@ -115,6 +118,7 @@ nnoremap <silent> <leader>ga :Gwrite<CR>:w<CR>
 
 " ----- neocomplete
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_auto_completion_start_length = 1
 
 " tab to expand, c-j to jump to next
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
