@@ -12,6 +12,7 @@ let g:spf13_bundle_groups=[
 " leader
 let g:spf13_leader='\'
 
+" TODO: put these config into bundles
 " vim-airline configuration
 let g:airline_powerline_fonts=1
 let g:airline#extensions#bufferline#enabled = 0

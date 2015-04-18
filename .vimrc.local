@@ -23,6 +23,8 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
+let g:solarized_termcolors=16
+
 " ----- make Y consistent with D and C
 nnoremap Y y$
 

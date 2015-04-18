@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# remove fork files used by spf13-vim
+vimrc_forc_files=(
+  '.vimrc.before.fork'
+  'vimrc.bundles.fork'
+  'vimrc.fork'
+)
+for file in "${vimrc_forc_files[@]}"; do
+  rm -i "$file"
+done
+
+# generate soft links
+vimrc_files=('.vimrc.before.local' '.vimrc.bundles.local' '.vimrc.local')
+for file in "${vimrc_files[@]}"; do
+  ln -s $PWD/$file ~/$file
+done
