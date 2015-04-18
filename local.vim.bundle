@@ -1,10 +1,10 @@
-" UnBundle 'honza/vim-snippets' " remove this plugin
 UnBundle 'NERDCommenter'
 UnBundle 'spf13/vim-autoclose'
 UnBundle 'scrooloose/nerdcommenter'
 UnBundle 'gorodinskiy/vim-coloresque'
 UnBundle 'Shougo/neosnippet-snippets'
 UnBundle 'bling/vim-bufferline'
+
 Bundle 'rking/ag.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'nelstrom/vim-textobj-rubyblock'
@@ -13,4 +13,9 @@ Bundle 'kana/vim-textobj-entire'
 Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'Chun-Yang/vim-snippets', {'name': 'vim-snippets-chun-yang'}
+
+" auto complete
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+Bundle 'Chun-Yang/vim-snippets'
