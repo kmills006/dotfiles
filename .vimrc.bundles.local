@@ -1,0 +1,49 @@
+UnBundle 'NERDCommenter'
+UnBundle 'spf13/vim-autoclose'
+UnBundle 'scrooloose/nerdcommenter'
+UnBundle 'gorodinskiy/vim-coloresque'
+UnBundle 'Shougo/neosnippet-snippets'
+UnBundle 'bling/vim-bufferline'
+
+Bundle 'rking/ag.vim'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'kana/vim-textobj-entire'
+Bundle 'Rykka/lastbuf.vim'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'jiangmiao/auto-pairs'
+
+" vim
+Bundle 'duff/vim-scratch'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'Raimondi/delimitMate'
+Bundle 'rstacruz/sparkup'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'myusuf3/numbers.vim'
+
+" auto complete
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+Bundle 'Chun-Yang/vim-snippets'
+
+" javascript
+Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'moll/vim-node'
+Bundle 'mxw/vim-jsx'
+
+" ruby
+Bundle 'rodjek/vim-puppet'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'vim-ruby/vim-ruby'
+
+" tmux
+Bundle 'benmills/vimux'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'jgdavey/vim-turbux'
+Bundle 'edkolev/tmuxline.vim'

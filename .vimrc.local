@@ -1,3 +1,28 @@
+" Use ; as :
+nnoremap ; :
+
+" Map comma space to unhighlight
+nnoremap <leader><space> :noh<cr>
+
+" Indent every line in the file with <leader>i
+nnoremap <Leader>= mmgg=G`m
+
+" Removes trailing spaces on save
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+
+" Remove trailing spaces on file write, append, buffwrite, and more
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
+
+" Set tabs to 2 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
 " ----- make Y consistent with D and C
 nnoremap Y y$
 
@@ -182,3 +207,7 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " recognize f,
 let g:neosnippet#enable_snipmate_compatibility = 1
+
+" ----- nerdtree
+" Don't close NERDTree when opening a file
+let NERDTreeQuitOnOpen=0

@@ -1,0 +1,20 @@
+" bundle configuration
+let g:spf13_bundle_groups=[
+      \ 'general',
+      \ 'writing',
+      \ 'programming',
+      \ 'ruby',
+      \ 'python',
+      \ 'javascript',
+      \ 'html',
+      \ 'misc']
+
+" leader
+let g:spf13_leader='\'
+
+" vim-airline configuration
+let g:airline_powerline_fonts=1
+let g:airline#extensions#bufferline#enabled = 0
+
+" jsx
+let g:jsx_ext_required = 0
