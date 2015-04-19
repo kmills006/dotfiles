@@ -16,23 +16,19 @@ for file in "${vimrc_forc_files[@]}"; do
   fi
 done
 
+
 # ----- rewrite vimrc files
 vimrc_files=('.vimrc.before.local' '.vimrc.bundles.local' '.vimrc.local')
 for file in "${vimrc_files[@]}"; do
-  if [ -f "$HOME/${file}" ] ; then
-    if [ -h "$HOME/${file}" ] ; then
-      # we do not care if it is a symbolic link
-      rm "$HOME/${file}"
-    else
-      # be cautious when trying to delete a file
-      rm -i "$HOME/${file}"
-    fi
-  fi
-  ln -s "$PWD/$file" "$HOME/$file"
+  # remove it if it is a symbolic link
+  if [ -h "$HOME/${file}" ] ; then rm -i "$HOME/${file}"; fi
+  echo "exe 'source' \"$PWD/${file}\"" > "$HOME/${file}"
 done
 
 # ----- rewrite .zshrc file
+if [ -h "$HOME/.zshrc" ] ; then rm -i "$HOME/.zshrc"; fi
 echo "source $PWD/.zshrc" > "$HOME/.zshrc"
 
 # ----- rewrite .tmux.conf file
+if [ -h "$HOME/.tmux.conf" ] ; then rm -i "$HOME/.tmux.conf"; fi
 echo "run-shell 'tmux source-file $PWD/.tmux.conf'" > "$HOME/.tmux.conf"
