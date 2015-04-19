@@ -1,17 +1,35 @@
 #!/bin/bash
 
-# remove fork files used by spf13-vim
+# You should only need to run this once.
+# However, you can run multiple times,
+# it should not change anything after the first run.
+
+# ----- remove fork files used by spf13-vim
 vimrc_forc_files=(
   '.vimrc.before.fork'
-  'vimrc.bundles.fork'
-  'vimrc.fork'
+  '.vimrc.bundles.fork'
+  '.vimrc.fork'
 )
 for file in "${vimrc_forc_files[@]}"; do
-  rm -i "$file"
+  if [ -e "$HOME/${file}" ]; then
+    rm -i "$HOME/${file}"
+  fi
 done
 
-# generate soft links
+# ----- rewrite vimrc files
 vimrc_files=('.vimrc.before.local' '.vimrc.bundles.local' '.vimrc.local')
 for file in "${vimrc_files[@]}"; do
-  ln -s $PWD/$file ~/$file
+  if [ -f "$HOME/${file}" ] ; then
+    if [ -h "$HOME/${file}" ] ; then
+      # we do not care if it is a symbolic link
+      rm "$HOME/${file}"
+    else
+      # be cautious when trying to delete a file
+      rm -i "$HOME/${file}"
+    fi
+  fi
+  ln -s "$PWD/$file" "$HOME/$file"
 done
+
+# ----- rewrite zsh file
+echo "source $PWD/.zshrc" > "$HOME/.zshrc"

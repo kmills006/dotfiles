@@ -1,1 +1,4 @@
-1. part of the loading mechanism is at ~/.zshrc
+1. initialize
+```
+./initialize
+```
