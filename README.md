@@ -1,4 +1,4 @@
-1. initialize
-```
 ./initialize
-```
+
+# TODO:
+- .vimrc.local change directory, use relative path

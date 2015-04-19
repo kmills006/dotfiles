@@ -1,213 +1,100 @@
+" ----- default key mappings
+" leader
+map <space> \
+
+" let switch ^ and 0
+nnoremap 0 ^
+nnoremap ^ 0
+
 " Use ; as :
 nnoremap ; :
 
+" Search by default is global, when we use g, we actually toggled it
+nnoremap / /\V
+vnoremap / /\V
+set nogdefault
+
+" S to split
+nnoremap S i<CR><Esc>
+
+" quick search do not make move, only search and high light
+nnoremap # *``
+nnoremap * *``
+
+" ----- leader key-bindings
 " Map comma space to unhighlight
 nnoremap <leader><space> :noh<cr>
+
+" change "" and '' back and force
+nmap <leader>' cs"'
+nmap <leader>" cs'"
 
 " Indent every line in the file with <leader>i
 nnoremap <Leader>= mmgg=G`m
 
-" Removes trailing spaces on save
-function! TrimWhiteSpace()
-  %s/\s\+$//e
-endfunction
+command! SaveSession :mks!
+nnoremap <leader>ss :SaveSession<CR>
+nnoremap <Leader>r :call RenameFile()<cr>
 
-" Remove trailing spaces on file write, append, buffwrite, and more
-autocmd FileWritePre    * :call TrimWhiteSpace()
-autocmd FileAppendPre   * :call TrimWhiteSpace()
-autocmd FilterWritePre  * :call TrimWhiteSpace()
-autocmd BufWritePre     * :call TrimWhiteSpace()
-
-" Set tabs to 2 spaces
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-
-let g:solarized_termcolors=16
-
-" ----- make Y consistent with D and C
-nnoremap Y y$
-
-" ----- tabs related
+" -----  command key-bindings
+" open new tab
 nnoremap <c-t> :tabnew<CR>
 
-" ----- Navigation in insert mode
+" navigation in insert mode
 inoremap <c-b> <ESC>hli
 inoremap <c-f> <ESC>lli
 inoremap <c-e> <ESC>A
 inoremap <c-a> <ESC>I
 
-" ----- leader
-map <space> \
-
-command! SaveSession :mks!
-nnoremap <leader>ss :SaveSession<CR>
-nnoremap <Leader>r :call RenameFile()<cr>
-nnoremap S i<CR><Esc>
-
-
-" ----- find next
+" find next
 nnoremap <c-f> ;
 vnoremap <c-f> ;
 
-" ----- command mode shortcut
+" command mode shortcut
 cnoremap <c-b> <Left>
 cnoremap <c-f> <Right>
 cnoremap <c-a> <C-b>
-
-" ----- Search by default is global, when we use g, we actually toggled it
-nnoremap / /\V
-vnoremap / /\V
-set nogdefault
-
-" ----- Quick search do not make move, only search and high light
-nnoremap * *``
-nnoremap # *``
 
 " save using ctrl-s in insert mode
 inoremap <c-s> <Esc>:w<CR>l
 nnoremap <c-s> <Esc>:w<CR>
 vnoremap <c-s> <Esc>:w<CR>
 
-" change "" and '' back and force
-nmap <leader>' cs"'
-nmap <leader>" cs'"
-
 " quit
 nnoremap <c-q> :q<cr>
 
 " force quit
-nnoremap <C-w><C-q> :q!<cr>
+nnoremap <c-w><c-q> :q!<cr>
 
-" windown manipulations
-nnoremap <C-w><C-w> <C-w>v
+" open window
+nnoremap <c-w><c-w> <c-w>v
 
-" ----- permernent macros
-" change ruby syntax
-let @r = ';%s/:\(\w\+\)\(\s*\)=>/\1:/g'
-" split arguments in brackets
-let @s = 'f(lSf)SkV:s/, /,\r/g=i)  '
+" ----- settings
+" Set tabs to 2 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 
-" -------------------- Plugins
-" lastbuf
-nnoremap <c-w><c-p> :LastBuf<CR>
-
-" nerdtree
-nmap <leader>o :NERDTreeFind<CR>
-
-" command p
-nmap <leader>p :CtrlPClearCache<CR>:CtrlP<CR>
-
-" ----- Copy current path relative, absolute, filename
-nnoremap cpa :let @+ = expand("%:p")<CR>
-nnoremap cpr :let @+ = expand("%")<CR>
-nnoremap cpn :let @+ = expand("%:t")<CR>
-
-" ----- commentary
-nmap <leader>c gcc
-vmap <leader>c gc
-
+" wrap lines
 set wrap
 
+" add a bar at 80 chars
 set colorcolumn=80
-colorscheme seoul256
 
-" ----- let . be a seperator
+" let . be a seperator
 set iskeyword -=.
 
-" ----- let switch ^ and 0
-nnoremap 0 ^
-nnoremap ^ 0
-
-" ----- do not use swap file, do not show warnings
+" do not use swap file, do not show warnings
 set noswapfile
 
-" ----- Tabularize
-map <leader>a :Tabularize /\V
 
-unmap <leader>a::
-map   <Leader>a:  :Tabularize /:\zs <CR>
+" ----- color scheme
+let g:solarized_termcolors=16
+colorscheme seoul256
 
-unmap <Leader>a=>
-map   <Leader>a=  :Tabularize /=<CR>
 
-unmap <leader>a,,
-map   <Leader>a,  :Tabularize /,\zs<CR>
-
-" ----- EasyMotion
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap s <Plug>(easymotion-s)
-
-" ----- syntastic
-" disable html checker
-let g:syntastic_html_checkers=['']
-
-" ----- fugitive
-nnoremap <silent> <leader>ga :Gwrite<CR>:w<CR>
-
-" ----- vim-airline
-
-" patch solarized theme to show modified status
-" black for unsaved
-let g:airline_theme_patch_func = 'SolarizedThemePatch'
-function! SolarizedThemePatch(palette)
-  if g:airline_theme == 'solarized'
-    for palette_modified in [
-          \ a:palette.normal_modified,
-          \ a:palette.insert_modified,
-          \ a:palette.visual_modified,
-          \ a:palette.replace_modified ]
-      for colors in values(palette_modified)
-        let colors[3] = 16
-      endfor
-    endfor
-  endif
-endfunction
-
-let g:airline_section_a = airline#section#create(['mode'])
-let g:airline_section_y = airline#section#create(['%L'])
-let g:airline#extensions#default#section_truncate_width = { 'x': 30, 'y': 30 }
-let g:airline#extensions#default#layout = [
-  \ ['a', 'c'],
-  \ ['x', 'y', 'warning']
-  \ ]
-let g:airline_mode_map = {
-  \ '__' : '-',
-  \ 'n'  : 'N',
-  \ 'i'  : 'I',
-  \ 'R'  : 'R',
-  \ 'c'  : 'C',
-  \ 'v'  : 'V',
-  \ 'V'  : 'V',
-  \ '' : 'V',
-  \ 's'  : 'S',
-  \ 'S'  : 'S',
-  \ '' : 'S',
-  \ }
-
-" ----- neocomplete
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_auto_completion_start_length = 1
-
-" tab auto complete snippets
-imap <Tab> <Plug>(neosnippet_expand_or_jump)
-smap <Tab> <Plug>(neosnippet_expand_or_jump)
-xmap <Tab> <Plug>(neosnippet_expand_target)
-
-" tab to complete
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n><Esc>a" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
-
-" use my snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-
-" recognize f,
-let g:neosnippet#enable_snipmate_compatibility = 1
-
-" ----- nerdtree
-" Don't close NERDTree when opening a file
-let NERDTreeQuitOnOpen=0
+" TODO: change directory, use relative path
+" ----- source plugin config
+for f in split(glob('~/.stack.d/vim/*.vimrc'), '\n')
+  exe 'source' f
+endfor
