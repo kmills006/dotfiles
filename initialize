@@ -31,5 +31,8 @@ for file in "${vimrc_files[@]}"; do
   ln -s "$PWD/$file" "$HOME/$file"
 done
 
-# ----- rewrite zsh file
+# ----- rewrite .zshrc file
 echo "source $PWD/.zshrc" > "$HOME/.zshrc"
+
+# ----- rewrite .tmux.conf file
+echo "run-shell 'tmux source-file $PWD/.tmux.conf'" > "$HOME/.tmux.conf"

@@ -30,8 +30,6 @@ nnoremap Y y$
 
 " ----- tabs related
 nnoremap <c-t> :tabnew<CR>
-nnoremap gh gT
-nnoremap gl gt
 
 " ----- Navigation in insert mode
 inoremap <c-b> <ESC>hli

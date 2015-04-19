@@ -1,7 +1,7 @@
+plugins+=(zsh_reload)
+
 # Fix fpath for brew installed completions
 fpath=(/usr/local/share/zsh/site-functions $fpath)
-
-plugins+=(zsh_reload)
 
 # enable ctrl-s and ctrl-q
 stty start undef
