@@ -36,6 +36,9 @@ command! SaveSession :mks!
 nnoremap <leader>ss :SaveSession<CR>
 nnoremap <Leader>r :call RenameFile()<cr>
 
+" unmap <leader>tt
+unmap <leader>tt
+
 " -----  command key-bindings
 " open new tab
 nnoremap <c-t> :tabnew<CR>
