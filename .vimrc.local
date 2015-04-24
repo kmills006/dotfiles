@@ -29,12 +29,8 @@ nnoremap <leader><space> :noh<cr>
 nmap <leader>' cs"'
 nmap <leader>" cs'"
 
-" Indent every line in the file with <leader>i
-nnoremap <Leader>= mmgg=G`m
-
 command! SaveSession :mks!
 nnoremap <leader>ss :SaveSession<CR>
-nnoremap <Leader>r :call RenameFile()<cr>
 
 " unmap <leader>tt
 unmap <leader>tt

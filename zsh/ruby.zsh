@@ -11,4 +11,4 @@ alias rv='rbenv'
 
 # for rails, we can run rake instead of bin/rake
 # make sure you run bundle install --binstubs first
-PATH=$PATH:./bin
+PATH=./bin:$PATH
