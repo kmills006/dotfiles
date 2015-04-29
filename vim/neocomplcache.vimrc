@@ -20,4 +20,5 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " recognize f,
 let g:neosnippet#enable_snipmate_compatibility = 1
 
-
+" disable defalut neosnippets
+let g:neosnippet#disable_runtime_snippets = { "_": 1, }
