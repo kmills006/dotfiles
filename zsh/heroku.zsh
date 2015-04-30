@@ -3,3 +3,6 @@
 
 # tail log
 # heroku logs --tail
+
+# heroku add git
+# heroku git:remote -a app
