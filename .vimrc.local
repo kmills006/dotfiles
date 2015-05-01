@@ -91,6 +91,7 @@ set noswapfile
 let g:solarized_termcolors=16
 colorscheme seoul256
 
+set nospell
 
 " TODO: change directory, use relative path
 " ----- source plugin config
