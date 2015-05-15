@@ -32,8 +32,11 @@ nmap <leader>" cs'"
 command! SaveSession :mks!
 nnoremap <leader>ss :SaveSession<CR>
 
-" unmap <leader>tt
-unmap <leader>tt
+try
+  " unmap <leader>tt
+  unmap <leader>tt
+catch
+endtry
 
 " -----  command key-bindings
 " open new tab
@@ -90,6 +93,10 @@ set noswapfile
 " ----- color scheme
 let g:solarized_termcolors=16
 colorscheme seoul256
+
+" ----- source vim and edit vim
+nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>
+nnoremap <leader>vs :source ~/.stack.d/.vimrc.local<cr>
 
 set nospell
 
