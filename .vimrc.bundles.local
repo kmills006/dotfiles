@@ -1,3 +1,4 @@
+UnBundle 'mxw/vim-jsx'
 UnBundle 'NERDCommenter'
 UnBundle 'spf13/vim-autoclose'
 UnBundle 'scrooloose/nerdcommenter'
@@ -38,7 +39,6 @@ Bundle 'Chun-Yang/vim-snippets'
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'moll/vim-node'
-Bundle 'mxw/vim-jsx'
 
 " ruby
 Bundle 'rodjek/vim-puppet'

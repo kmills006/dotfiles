@@ -33,10 +33,13 @@ command! SaveSession :mks!
 nnoremap <leader>ss :SaveSession<CR>
 
 try
-  " unmap <leader>tt
   unmap <leader>tt
 catch
 endtry
+
+" ----- source vim and edit vim
+nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>
+nnoremap <leader>vs :source ~/.stack.d/.vimrc.local<cr>
 
 " -----  command key-bindings
 " open new tab
@@ -94,11 +97,10 @@ set noswapfile
 let g:solarized_termcolors=16
 colorscheme seoul256
 
-" ----- source vim and edit vim
-nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>
-nnoremap <leader>vs :source ~/.stack.d/.vimrc.local<cr>
-
 set nospell
+
+" ----- unfold when open a new file
+autocmd BufWinEnter * normal zR
 
 " TODO: change directory, use relative path
 " ----- source plugin config
