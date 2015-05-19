@@ -102,6 +102,9 @@ set nospell
 " ----- unfold when open a new file
 autocmd BufWinEnter * normal zR
 
+" ----- ;; add ; to the end and go back
+inoremap ;; <Esc>A;<Esc>hi
+
 " TODO: change directory, use relative path
 " ----- source plugin config
 for f in split(glob('~/.stack.d/vim/*.vimrc'), '\n')
