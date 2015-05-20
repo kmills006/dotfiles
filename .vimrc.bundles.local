@@ -8,6 +8,8 @@ UnBundle 'bling/vim-bufferline'
 UnBundle 'mileszs/ack.vim'
 UnBundle 'mhinz/vim-signify'
 UnBundle 'jistr/vim-nerdtree-tabs'
+UnBundle 'tacahiroy/ctrlp-funky'
+UnBundle 'mbbill/undotree'
 
 Bundle 'rking/ag.vim'
 Bundle 'jgdavey/vim-blockle'
@@ -18,6 +20,13 @@ Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'airblade/vim-gitgutter'
+
+" NOTE:
+" - think of a way to unbulde multiple-cursor, use the origional one
+" UnBundle 'kristijanhusak/vim-multiple-cursors'
+" Bundle 'terryma/vim-multiple-cursors'
+" - learn more aboute kana/vim-textobj-user
+" At WildFire(Finished)
 
 " vim
 Bundle 'duff/vim-scratch'
