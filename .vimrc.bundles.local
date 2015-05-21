@@ -20,6 +20,7 @@ Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'FooSoft/vim-argwrap'
 
 " NOTE:
 " - think of a way to unbulde multiple-cursor, use the origional one
