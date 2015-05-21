@@ -22,6 +22,9 @@ nnoremap # *``
 nnoremap * *``
 
 " ----- leader key-bindings
+" remove jt by spf13:
+silent! unmap <leader>jt
+
 " Map comma space to unhighlight
 nnoremap <leader><space> :noh<cr>
 
@@ -32,10 +35,10 @@ nmap <leader>" cs'"
 command! SaveSession :mks!
 nnoremap <leader>ss :SaveSession<CR>
 
-try
-  unmap <leader>tt
-catch
-endtry
+" split
+nnoremap <Leader>s. :s/\.\([^(]*)\)\@!/\r./g<CR>:noh<cr>
+
+silent! unmap <leader>tt
 
 " ----- source vim and edit vim
 nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>
@@ -73,6 +76,9 @@ nnoremap <c-w><c-q> :q!<cr>
 
 " open window
 nnoremap <c-w><c-w> <c-w>v
+
+" ----- other double key bindings
+nnoremap =j :%!python -m json.tool<CR>
 
 " ----- settings
 " Set tabs to 2 spaces
