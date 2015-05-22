@@ -109,7 +109,7 @@ set nospell
 autocmd BufWinEnter * normal zR
 
 " ----- ;; add ; to the end and go back
-inoremap ;; lmqA;`q;
+inoremap ;; lmqA;`qi
 
 " TODO: change directory, use relative path
 " ----- source plugin config
