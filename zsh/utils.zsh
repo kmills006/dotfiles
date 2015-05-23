@@ -9,3 +9,5 @@ alias ll='ls -GFhl' # Same as above, but in long listing format
 alias pwdc='echo "cd $(pwd)" | pbcopy'
 alias wtf='top -o CPU'
 alias q='exit'
+
+alias custom='cd ~/.stack.d'

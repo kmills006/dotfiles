@@ -35,6 +35,6 @@ alias gap='git stash apply --index'
 
 # log
 alias gl='git log'
-alias glo='git log --oneline --decorate --all'
+alias glo='git log --oneline --decorate'
 alias glc='git log --pretty=format:"%s"'
 alias glast='git log -1 --pretty=format:"%s" | pbcopy'
