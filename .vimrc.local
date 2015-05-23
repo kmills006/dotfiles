@@ -93,8 +93,8 @@ nnoremap ,p "0p
 " resize
 nnoremap <Left>  :vertical resize -20
 nnoremap <Right> :vertical resize +20
-nnoremap <Up>    :vertical resize +20
-nnoremap <Down>  :vertical resize -20
+nnoremap <Up>    :resize +20
+nnoremap <Down>  :resize -20
 
 " ----- settings
 " Set tabs to 2 spaces
