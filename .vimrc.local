@@ -86,6 +86,16 @@ nnoremap <c-w><c-w> <c-w>v
 " ----- other double key bindings
 nnoremap =j :%!python -m json.tool<CR>
 
+" past using last yanked
+vnoremap ,p "0p
+nnoremap ,p "0p
+
+" resize
+nnoremap <Left>  :vertical resize -20
+nnoremap <Right> :vertical resize +20
+nnoremap <Up>    :vertical resize +20
+nnoremap <Down>  :vertical resize -20
+
 " ----- settings
 " Set tabs to 2 spaces
 set shiftwidth=2
