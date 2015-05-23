@@ -2,9 +2,15 @@
 " leader
 map <space> \
 
-" let switch ^ and 0
+" switch ^ and 0
 nnoremap 0 ^
+vnoremap 0 ^
 nnoremap ^ 0
+vnoremap ^ 0
+
+" use _ as g_ (till the end of line)
+nnoremap _ g_
+vnoremap _ g_
 
 " Use ; as :
 nnoremap ; :
