@@ -2,6 +2,7 @@ alias gs='git status'
 
 # remote communicate
 alias gps='git push'
+alias gsp='git push'
 alias gpl='git pull'
 
 # step up
