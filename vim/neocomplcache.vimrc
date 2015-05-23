@@ -1,5 +1,5 @@
 let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_auto_completion_start_length = 1
+let g:neocomplcache_auto_completion_start_length = 2
 
 " tab auto complete snippets
 imap <Tab> <Plug>(neosnippet_expand_or_jump)
