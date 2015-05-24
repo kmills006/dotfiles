@@ -1,0 +1,1 @@
+alias va='vagrant'

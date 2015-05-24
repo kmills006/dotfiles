@@ -90,6 +90,13 @@ nnoremap =j :%!python -m json.tool<CR>
 vnoremap ,p "0p
 nnoremap ,p "0p
 
+" ;; add ; to the end and go back
+inoremap ;; lmqA;`qi
+
+" yY and dD
+nnoremap yY 0Y
+nnoremap dD 0D
+
 " resize
 nnoremap <Left>  :vertical resize -20
 nnoremap <Right> :vertical resize +20
@@ -114,18 +121,15 @@ set iskeyword -=.
 " do not use swap file, do not show warnings
 set noswapfile
 
+" ----- do not do spell check
+set nospell
 
 " ----- color scheme
 let g:solarized_termcolors=16
 colorscheme seoul256
 
-set nospell
-
 " ----- unfold when open a new file
 autocmd BufWinEnter * normal zR
-
-" ----- ;; add ; to the end and go back
-inoremap ;; lmqA;`qi
 
 " TODO: change directory, use relative path
 " ----- source plugin config
