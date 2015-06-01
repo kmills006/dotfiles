@@ -36,7 +36,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'Raimondi/delimitMate'
 Bundle 'rstacruz/sparkup'
 Bundle 'sjl/gundo.vim'
-" Bundle 'tpope/vim-endwise' " not using ruby, I can turn it off
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'myusuf3/numbers.vim'
