@@ -1,2 +1,2 @@
-nnoremap <silent> <leader>ga :Gwrite<CR>:w<CR>
+nnoremap <silent> ga :Gwrite<CR>:w<CR>
 
