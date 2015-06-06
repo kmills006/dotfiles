@@ -1,4 +1,5 @@
 ZSH_THEME="robbyrussell"
+ZSH_CUSTOM=$HOME/.stack.d/zsh/custom/
 
 # start oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
