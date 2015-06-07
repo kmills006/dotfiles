@@ -26,7 +26,7 @@ nnoremap S i<CR><Esc>
 
 " quick search do not make move, only search and high light
 nnoremap # *``
-nnoremap * *``
+vnoremap # y/<C-R>"<CR>N
 
 " ----- leader key-bindings
 " remove jt by spf13:
