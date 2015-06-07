@@ -16,6 +16,7 @@ alias go='git checkout'
 alias gou='git clean -id' # remove untracked files
 alias gob='git reset HEAD'
 alias goc='git reset --soft HEAD~1'
+alias gocc='git reset --hard HEAD~1' # c means confirm
 alias gor='git checkout --track'
 
 # diff
