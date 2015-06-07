@@ -15,26 +15,24 @@ else
 fi
 
 precmd() {
-  # TODO: figure out what does these command do
   # untracked files or unstaged files
-  if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
+  PROMPT="%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}"
 
+  # is a git repo
+  if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
+    # has unstaged or untracked files
     if git ls-files --other --exclude-standard 2> /dev/null | grep -q "." || ! git diff --exit-code --quiet; then
-      PROMPT='%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}%{$hotpink%}● %{$reset_color%}'
+      PROMPT+="%{$hotpink%}● %{$reset_color%}"
     else
+      # has uncommited files
       if ! git diff-index --quiet --cached HEAD; then
-        PROMPT='%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}%{$limegreen%}● %{$reset_color%}'
-      else
-        PROMPT='%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}'
+        PROMPT+="%{$limegreen%}● %{$reset_color%}"
       fi
     fi;
-
-  else
-    PROMPT='%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}'
   fi;
 }
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%})"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%})"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
+ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_CLEAN=""
