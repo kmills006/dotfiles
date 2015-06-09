@@ -1,1 +1,35 @@
-/Users/trent/.spf13-vim-3/.vimrc.before
+" Prevent automatically changing to open file directory
+let g:spf13_no_autochdir = 1
+
+" Disable views
+let g:spf13_no_views = 1
+
+" Leader keys
+let g:spf13_leader='\'
+"   let g:spf13_localleader='_'
+
+
+" Disable  omni complete
+let g:spf13_no_omni_complete = 1
+
+
+" bundle configuration
+let g:spf13_bundle_groups=[
+      \ 'general',
+      \ 'writing',
+      \ 'programming',
+      \ 'ruby',
+      \ 'python',
+      \ 'javascript',
+      \ 'html',
+      \ 'misc']
+
+" leader
+let g:spf13_leader='\'
+
+" NOTE: these must be set before spf13
+" vim-airline configuration
+let g:airline_powerline_fonts=1
+let g:airline#extensions#bufferline#enabled = 0
+
+let g:spf13_no_omni_complete = 1

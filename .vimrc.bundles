@@ -1,0 +1,120 @@
+set nocompatible        " Must be first line
+set background=dark     " Assume a dark background
+
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" Add an UnBundle command {
+function! UnBundle(arg, ...)
+  let bundle = vundle#config#init_bundle(a:arg, a:000)
+  call filter(g:vundle#bundles, 'v:val["name_spec"] != "' . a:arg . '"')
+endfunction
+
+com! -nargs=+         UnBundle
+      \ call UnBundle(<args>)
+" }
+
+" Bundles {
+
+Bundle 'gmarik/vundle'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
+
+" General {
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'spf13/vim-colors'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'kristijanhusak/vim-multiple-cursors'
+Bundle 'vim-scripts/sessionman.vim'
+Bundle 'matchit.zip'
+Bundle 'bling/vim-airline'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'tpope/vim-abolish.git'
+Bundle 'osyo-manga/vim-over'
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'gcmt/wildfire.vim'
+
+Bundle 'reedes/vim-litecorrect'
+Bundle 'reedes/vim-textobj-sentence'
+Bundle 'reedes/vim-textobj-quote'
+Bundle 'reedes/vim-wordy'
+
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'tpope/vim-commentary'
+Bundle 'godlygeek/tabular'
+if executable('ctags')
+  Bundle 'majutsushi/tagbar'
+endif
+
+Bundle 'elzr/vim-json'
+Bundle 'groenewege/vim-less'
+Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
+Bundle 'kchmck/vim-coffee-script'
+
+
+Bundle 'tpope/vim-rails'
+let g:rubycomplete_buffer_loading = 1
+
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'tpope/vim-haml'
+Bundle 'rking/ag.vim'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'kana/vim-textobj-entire'
+Bundle 'Rykka/lastbuf.vim'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'FooSoft/vim-argwrap'
+
+" NOTE:
+" - think of a way to unbulde multiple-cursor, use the origional one
+" UnBundle 'kristijanhusak/vim-multiple-cursors'
+" Bundle 'terryma/vim-multiple-cursors'
+" - learn more aboute kana/vim-textobj-user
+" At WildFire(Finished)
+
+" vim
+Bundle 'duff/vim-scratch'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'rstacruz/sparkup'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'vim-scripts/argtextobj.vim'
+
+" auto complete
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Chun-Yang/vim-snippets'
+
+" javascript
+Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'moll/vim-node'
+
+" ruby
+Bundle 'rodjek/vim-puppet'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'vim-ruby/vim-ruby'
+
+" tmux
+Bundle 'benmills/vimux'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'jgdavey/vim-turbux'
+Bundle 'edkolev/tmuxline.vim'
