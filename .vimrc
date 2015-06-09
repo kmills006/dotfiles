@@ -1,0 +1,1 @@
+/Users/trent/.spf13-vim-3/.vimrc
