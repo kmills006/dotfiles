@@ -5,24 +5,11 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-" Add an UnBundle command {
-function! UnBundle(arg, ...)
-  let bundle = vundle#config#init_bundle(a:arg, a:000)
-  call filter(g:vundle#bundles, 'v:val["name_spec"] != "' . a:arg . '"')
-endfunction
-
-com! -nargs=+         UnBundle
-      \ call UnBundle(<args>)
-" }
-
-" Bundles {
-
 Bundle 'gmarik/vundle'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
 
-" General {
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
@@ -53,9 +40,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'godlygeek/tabular'
-if executable('ctags')
-  Bundle 'majutsushi/tagbar'
-endif
+Bundle 'majutsushi/tagbar'
 
 Bundle 'elzr/vim-json'
 Bundle 'groenewege/vim-less'
@@ -76,16 +61,10 @@ Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
-Bundle 'jiangmiao/auto-pairs'
+" https://github.com/jiangmiao/auto-pairs/pull/84
+Bundle 'Chun-Yang/auto-pairs'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'FooSoft/vim-argwrap'
-
-" NOTE:
-" - think of a way to unbulde multiple-cursor, use the origional one
-" UnBundle 'kristijanhusak/vim-multiple-cursors'
-" Bundle 'terryma/vim-multiple-cursors'
-" - learn more aboute kana/vim-textobj-user
-" At WildFire(Finished)
 
 " vim
 Bundle 'duff/vim-scratch'
