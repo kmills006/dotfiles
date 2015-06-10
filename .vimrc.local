@@ -72,7 +72,7 @@ cnoremap <c-a> <C-b>
 
 " save using ctrl-s in insert mode
 inoremap <c-s> <Esc>:w<CR>l
-nnoremap <c-s> <Esc>:w<CR>
+nnoremap <c-s> :w<CR>
 vnoremap <c-s> <Esc>:w<CR>
 
 " quit
