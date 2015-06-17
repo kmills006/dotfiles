@@ -3,7 +3,11 @@ alias gs='git status'
 # remote communicate
 alias gps='git push'
 alias gsp='git push'
+alias gpsp='git push production'
 alias gpl='git pull'
+
+# git bisect
+alias gbs='git bisect'
 
 # step up
 alias ga='git add -A'
@@ -28,6 +32,7 @@ alias gdc='git diff HEAD^ HEAD'
 
 # branch
 alias gba='git branch --all'
+alias gbd='git branch -d'
 alias gm='git merge'
 alias gmn='git merge --no-ff'
 
