@@ -92,7 +92,7 @@ vnoremap ,p "0p
 nnoremap ,p "0p
 
 " ;; add ; to the end and go back
-inoremap ;; lmqA;`qi
+" inoremap ;; lmqA;`qi
 
 " yY and dD
 nnoremap yY 0Y
