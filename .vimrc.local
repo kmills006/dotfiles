@@ -127,7 +127,7 @@ set nospell
 
 " ----- color scheme
 let g:solarized_termcolors=16
-colorscheme seoul256
+colorscheme Tomorrow
 
 " ----- unfold when open a new file
 autocmd BufWinEnter * normal zR
