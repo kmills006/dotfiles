@@ -33,6 +33,7 @@ alias gdc='git diff HEAD^ HEAD'
 # branch
 alias gba='git branch --all'
 alias gbd='git branch -d'
+alias gbD='git branch -D'
 alias gm='git merge'
 alias gmn='git merge --no-ff'
 
