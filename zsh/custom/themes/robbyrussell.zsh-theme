@@ -25,7 +25,7 @@ precmd() {
       PROMPT+="%{$hotpink%}● %{$reset_color%}"
     else
       # has uncommited files
-      if ! git diff-index --quiet --cached HEAD; then
+      if ! git diff-index --quiet --cached HEAD 2> /dev/null ; then
         PROMPT+="%{$limegreen%}● %{$reset_color%}"
       fi
     fi;
