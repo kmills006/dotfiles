@@ -1,6 +1,9 @@
 " ----- Removes trailing spaces on save
 function! TrimWhiteSpace()
-  %s/\s\+$//e
+  let blacklist = ['markdown']
+  if index(blacklist, &ft) < 0
+    %s/\s\+$//e
+  endif
 endfunction
 
 " Remove trailing spaces on file write, append, buffwrite, and more
