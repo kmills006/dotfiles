@@ -8,7 +8,10 @@ File: ```tmuxinator/sample.yml```
 
 ##File to edit:
 your gems version or path might be different to double check on that use
-"gem which tmuxinator" this provide you the full path ex: ```/Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator.rb```
+"gem which tmuxinator" this provide you the full path example
+```
+/Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator.rb
+```
 
 The file is going to be a "READ ONLY" file so you might not be able
 to save in on vim depending on the settings you have. ```vim /Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator/assets/sample.yml```
