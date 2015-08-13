@@ -1,0 +1,15 @@
+# ~/.tmuxinator/<%= name %>.yml
+
+name: <%= name %>
+root: ~/Work/<%= name %>
+
+pre: mkdir -p ~/Work/<%= name %>
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - vim
+        - c
+        - c
+  - config:
