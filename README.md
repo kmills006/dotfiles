@@ -20,7 +20,7 @@ If you want to open it with sublime instead you can just use:
 It will ask you for your password in order to save the file after that you all set ready to go with your own default file.
 
 ##To create new workflow:
-  ```tmuxinator open [workflow-name]
+  ```tmuxinator open [workflow-name]```
 
 ##To use:
   ```tmuxinator start [workflow-name]```
