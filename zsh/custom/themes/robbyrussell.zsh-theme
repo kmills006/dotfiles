@@ -1,12 +1,7 @@
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/steeef.zsh-theme
 #use extended color pallete if available
-if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
-    hotpink="%F{001}"
-    limegreen="%F{118}"
-else
-    hotpink="$fg[red]"
-    limegreen="$fg[green]"
-fi
+hotpink="$fg[red]"
+limegreen="$fg[green]"
 
 precmd() {
   # untracked files or unstaged files
