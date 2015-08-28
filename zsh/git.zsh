@@ -4,7 +4,7 @@ alias gs='git status'
 alias gps='git push'
 alias gsp='git push'
 alias gpsp='git push production'
-alias gpl='git pull'
+alias gpl='git pull && git submodule foreach git pull origin master'
 
 # git bisect
 alias gbs='git bisect'
