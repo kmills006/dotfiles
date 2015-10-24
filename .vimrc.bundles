@@ -87,6 +87,7 @@ Bundle 'Chun-Yang/vim-snippets'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'moll/vim-node'
 Bundle 'poetic/vim-textobj-javascript'
+Bundle 'mxw/vim-jsx'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
