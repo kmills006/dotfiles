@@ -35,6 +35,7 @@ alias gdc='git diff HEAD^ HEAD'
 alias gba='git branch --all'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
+alias gbdr='git push origin --delete'
 alias gm='git merge'
 alias gmn='git merge --no-ff'
 
