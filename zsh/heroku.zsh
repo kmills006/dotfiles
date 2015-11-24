@@ -6,3 +6,6 @@
 
 # heroku add git
 # heroku git:remote -a app
+
+# herokudump <database_name>
+alias herokudump='heroku pg:pull DATABASE_URL'
