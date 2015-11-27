@@ -99,6 +99,9 @@ nnoremap ,p "0p
 nnoremap yY 0Y
 nnoremap dD 0D
 
+" delete all ;
+nnoremap d; :%s/\;$//g
+
 " resize
 nnoremap <Left>  :vertical resize -20
 nnoremap <Right> :vertical resize +20
