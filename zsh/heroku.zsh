@@ -9,3 +9,5 @@
 
 # herokudump <database_name>
 alias herokudump='heroku pg:pull DATABASE_URL'
+# herokuadd <app name>
+alias herokuadd='heroku git:remote -a'
