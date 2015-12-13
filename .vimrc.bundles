@@ -67,15 +67,16 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'FooSoft/vim-argwrap'
 
 " vim
+Bundle 'christoomey/vim-sort-motion'
 Bundle 'duff/vim-scratch'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'myusuf3/numbers.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'myusuf3/numbers.vim'
 Bundle 'vim-scripts/argtextobj.vim'
 
 " auto complete
