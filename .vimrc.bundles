@@ -8,7 +8,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-let g:ackprg = 'ag --nogroup --nocolor --column --smart-case'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
@@ -61,8 +60,6 @@ Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
-" https://github.com/jiangmiao/auto-pairs/pull/84
-Bundle 'Chun-Yang/auto-pairs'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'FooSoft/vim-argwrap'
 
@@ -83,6 +80,7 @@ Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Chun-Yang/vim-snippets'
+Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
