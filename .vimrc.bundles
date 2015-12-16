@@ -48,9 +48,6 @@ Bundle 'briancollins/vim-jst'
 Bundle 'kchmck/vim-coffee-script'
 
 
-Bundle 'tpope/vim-rails'
-let g:rubycomplete_buffer_loading = 1
-
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'tpope/vim-haml'
 Bundle 'rking/ag.vim'
@@ -92,6 +89,7 @@ Bundle 'mxw/vim-jsx'
 Bundle 'rodjek/vim-puppet'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
 
 " tmux
 Bundle 'benmills/vimux'
