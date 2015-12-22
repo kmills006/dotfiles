@@ -1,7 +1,7 @@
 alias gs='git status'
 
 # remote communicate
-alias gps='git push'
+alias gps='git push 2> /dev/null || git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
 alias gsp='git push'
 alias gpsp='git push production'
 alias gpl='git pull && git submodule foreach git pull origin master'
