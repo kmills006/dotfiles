@@ -1,6 +1,6 @@
 " ----- Removes trailing spaces on save
 function! TrimWhiteSpace()
-  let blacklist = ['markdown']
+  let blacklist = ['markdown', 'neosnippet']
   if index(blacklist, &ft) < 0
     %s/\s\+$//e
   endif
