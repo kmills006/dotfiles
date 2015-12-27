@@ -1,14 +1,3 @@
-" bundle configuration
-let g:spf13_bundle_groups=[
-      \ 'general',
-      \ 'writing',
-      \ 'programming',
-      \ 'ruby',
-      \ 'python',
-      \ 'javascript',
-      \ 'html',
-      \ 'misc']
-
 " Environment {
 
     " Identify platform {
@@ -38,12 +27,6 @@ let g:spf13_bundle_groups=[
         endif
     " }
 
-" }
-
-" Use bundles config {
-    if filereadable(expand("~/.vimrc.bundles"))
-        source ~/.vimrc.bundles
-    endif
 " }
 
 " General {
@@ -173,18 +156,6 @@ let g:spf13_bundle_groups=[
 
 " Key (re)Mappings {
 
-    " Easier moving in tabs and windows
-    " The lines conflict with the default digraph mapping of <C-K>
-    " If you prefer that functionality, add the following to your
-    " .vimrc.before.local file:
-    "   let g:spf13_no_easyWindows = 1
-    if !exists('g:spf13_no_easyWindows')
-        map <C-J> <C-W>j<C-W>_
-        map <C-K> <C-W>k<C-W>_
-        map <C-L> <C-W>l<C-W>_
-        map <C-H> <C-W>h<C-W>_
-    endif
-
     " Wrapped lines goes down/up to next row, rather than next line in file.
     noremap j gj
     noremap k gk
@@ -228,16 +199,6 @@ let g:spf13_bundle_groups=[
         vnoremap ^ :<C-U>call WrapRelativeMotion("^", 1)<CR>
     endif
 
-    " The following two lines conflict with moving to top and
-    " bottom of the screen
-    " If you prefer that functionality, add the following to your
-    " .vimrc.before.local file:
-    "   let g:spf13_no_fastTabs = 1
-    if !exists('g:spf13_no_fastTabs')
-        map <S-H> gT
-        map <S-L> gt
-    endif
-
     " Stupid shift key fixes
     if !exists('g:spf13_no_keyfixes')
         if has("user_commands")
@@ -254,8 +215,6 @@ let g:spf13_bundle_groups=[
 
         cmap Tabe tabe
     endif
-
-    nnoremap Y y$
 
     nmap <silent> <leader>/ :nohlsearch<CR>
 
@@ -284,67 +243,5 @@ let g:spf13_bundle_groups=[
 
 " }
 
-" Plugins {
-
-    " TextObj Sentence {
-        if count(g:spf13_bundle_groups, 'writing')
-            augroup textobj_sentence
-              autocmd!
-              autocmd FileType markdown call textobj#sentence#init()
-              autocmd FileType textile call textobj#sentence#init()
-              autocmd FileType text call textobj#sentence#init()
-            augroup END
-        endif
-    " }
-
-    " TextObj Quote {
-        if count(g:spf13_bundle_groups, 'writing')
-            augroup textobj_quote
-                autocmd!
-                autocmd FileType markdown call textobj#quote#init()
-                autocmd FileType textile call textobj#quote#init()
-                autocmd FileType text call textobj#quote#init({'educate': 0})
-            augroup END
-        endif
-    " }
-
-    " PIV {
-        if isdirectory(expand("~/.vim/bundle/PIV"))
-            let g:DisableAutoPHPFolding = 0
-            let g:PIVAutoClose = 0
-        endif
-    " }
-
-    " Misc {
-        if isdirectory(expand("~/.vim/bundle/nerdtree"))
-            let g:NERDShutUp=1
-        endif
-        if isdirectory(expand("~/.vim/bundle/matchit.zip"))
-            let b:match_ignorecase = 1
-        endif
-    " }
-
-    " Ctags {
-        set tags=./tags;/,~/.vimtags
-
-        " Make tags placed in .git/tags file available in all levels of a repository
-        let gitroot = substitute(system('git rev-parse --show-toplevel'), '[\n\r]', '', 'g')
-        if gitroot != ''
-            let &tags = &tags . ',' . gitroot . '/.git/tags'
-        endif
-    " }
-
-    " Session List {
-        set sessionoptions=blank,buffers,curdir,folds,tabpages,winsize
-        if isdirectory(expand("~/.vim/bundle/sessionman.vim/"))
-            nmap <leader>sl :SessionList<CR>
-            nmap <leader>ss :SessionSave<CR>
-            nmap <leader>sc :SessionClose<CR>
-        endif
-    " }
-
-
-
-" }
-
+source ~/.stack.d/.vimrc.bundles
 source ~/.stack.d/.vimrc.local

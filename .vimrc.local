@@ -2,88 +2,10 @@
 " leader
 map <space> \
 
-" switch ^ and 0
-nnoremap 0 ^
-vnoremap 0 ^
-nnoremap ^ 0
-vnoremap ^ 0
-
 " use _ as g_ (till the end of line)
 nnoremap _ g_
 vnoremap _ g_
 nmap ys_ ysg_
-
-" Use ; as :
-nnoremap ; :
-
-" Search by default is global, when we use g, we actually toggled it
-nnoremap / /\V
-vnoremap / /\V
-set nogdefault
-
-" S to split
-nnoremap S i<CR><Esc>
-
-" quick search do not make move, only search and high light
-nnoremap # *``
-vnoremap # y/<C-R>"<CR>N
-
-" ----- leader key-bindings
-" remove jt by spf13:
-silent! unmap <leader>jt
-
-" Map comma space to unhighlight
-nnoremap <leader><space> :noh<cr>
-
-" change "" and '' back and force
-nmap <leader>' cs"'
-nmap <leader>" cs'"
-
-command! SaveSession :mks!
-nnoremap <leader>ss :SaveSession<CR>
-
-" split
-nnoremap <Leader>s. :s/\.\([^(]*)\)\@!/\r./g<CR>:noh<cr>
-nnoremap <Leader>s<space> :s/\(\S\)\s/\1\r/g<CR>:noh<cr>
-
-silent! unmap <leader>tt
-
-" ----- source vim and edit vim
-nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>
-nnoremap <leader>vs :source ~/.stack.d/.vimrc.local<cr>
-
-" -----  command key-bindings
-" open new tab
-nnoremap <c-t> :tabnew<CR>
-
-" navigation in insert mode
-inoremap <c-b> <ESC>hli
-inoremap <c-f> <ESC>lli
-inoremap <c-e> <ESC>A
-inoremap <c-a> <ESC>I
-
-" find next
-nnoremap <c-f> ;
-vnoremap <c-f> ;
-
-" command mode shortcut
-cnoremap <c-b> <Left>
-cnoremap <c-f> <Right>
-cnoremap <c-a> <C-b>
-
-" save using ctrl-s in insert mode
-inoremap <c-s> <Esc>:w<CR>l
-nnoremap <c-s> :w<CR>
-vnoremap <c-s> <Esc>:w<CR>
-
-" quit
-nnoremap <c-q> :q<cr>
-
-" force quit
-nnoremap <c-w><c-q> :q!<cr>
-
-" open window
-nnoremap <c-w><c-w> <c-w>v
 
 " ----- other double key bindings
 nnoremap =j :%!python -m json.tool<CR>
@@ -108,27 +30,6 @@ nnoremap <Right> :vertical resize +20
 nnoremap <Up>    :resize +20
 nnoremap <Down>  :resize -20
 
-" ----- settings
-" Set tabs to 2 spaces
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-
-" wrap lines
-set wrap
-
-" add a bar at 80 chars
-set colorcolumn=80
-
-" let . be a seperator
-set iskeyword -=.
-
-" do not use swap file, do not show warnings
-set noswapfile
-
-" ----- do not do spell check
-set nospell
-
 " ----- color scheme
 let g:solarized_termcolors=16
 colorscheme seoul256
@@ -136,7 +37,6 @@ colorscheme seoul256
 " ----- unfold when open a new file
 autocmd BufWinEnter * normal zR
 
-" TODO: change directory, use relative path
 " ----- source plugin config
 for f in split(glob('~/.stack.d/vim/*.vimrc'), '\n')
   exe 'source' f
