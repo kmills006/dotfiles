@@ -2,7 +2,15 @@
 function! TrimWhiteSpace()
   let blacklist = ['markdown', 'neosnippet']
   if index(blacklist, &ft) < 0
-    %s/\s\+$//e
+      " Preparation: save last search, and cursor position.
+      let _s=@/
+      let l = line(".")
+      let c = col(".")
+      " do the business:
+      %s/\s\+$//e
+      " clean up: restore previous search history, and cursor position
+      let @/=_s
+      call cursor(l, c)
   endif
 endfunction
 
