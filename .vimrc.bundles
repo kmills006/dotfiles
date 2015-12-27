@@ -86,6 +86,9 @@ Bundle 'moll/vim-node'
 Bundle 'poetic/vim-textobj-javascript'
 Bundle 'mxw/vim-jsx'
 
+" python
+Bundle 'klen/python-mode'
+
 " ruby
 Bundle 'rodjek/vim-puppet'
 Bundle 'thoughtbot/vim-rspec'
