@@ -1,3 +1,9 @@
+" symbols , , , , , , and 
+let g:airline#extensions#bufferline#enabled = 0
+let g:airline_theme = 'solarized'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
 " patch solarized theme to show modified status
 " black for unsaved
 let g:airline_theme_patch_func = 'SolarizedThemePatch'
@@ -14,6 +20,8 @@ function! SolarizedThemePatch(palette)
     endfor
   endif
 endfunction
+
+call airline#parts#define_accent('syntastic', 'red')
 
 let g:airline_section_a = airline#section#create(['mode'])
 let g:airline_section_y = airline#section#create(['%L'])
