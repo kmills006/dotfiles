@@ -82,7 +82,7 @@ Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'moll/vim-node'
+" Bundle 'moll/vim-node' " this works with node modules, not regular files
 Bundle 'poetic/vim-textobj-javascript'
 Bundle 'mxw/vim-jsx'
 
