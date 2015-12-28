@@ -22,6 +22,7 @@ function! SolarizedThemePatch(palette)
 endfunction
 
 call airline#parts#define_accent('syntastic', 'red')
+call airline#parts#define_accent('whitespace', 'red')
 
 let g:airline_section_a = airline#section#create(['mode'])
 let g:airline_section_y = airline#section#create(['%L'])
