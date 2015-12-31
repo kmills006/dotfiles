@@ -9,8 +9,8 @@ stty stop undef
 setopt noflowcontrol
 
 # emacs bindings
-bindkey "^P" up-line-or-search
-bindkey "^N" down-line-or-search
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
 
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
