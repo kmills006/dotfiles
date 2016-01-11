@@ -12,6 +12,11 @@ precmd() {
   # untracked files or unstaged files
   PROMPT="%{$reset_color%}%p %{$reset_color%}%c %{$reset_color%}$(git_prompt_info) %{$reset_color%}"
 
+  # use HIDE_GIT as a flag to turn off the git checking
+  if [ -n "$HIDE_GIT" ]; then
+    return 0
+  fi;
+
   # is a git repo
   if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
     # has unstaged or untracked files
