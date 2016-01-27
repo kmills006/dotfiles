@@ -7,6 +7,12 @@ nnoremap _ g_
 vnoremap _ g_
 nmap ys_ ysg_
 
+" resize
+nnoremap <Left>  :vertical resize -20
+nnoremap <Right> :vertical resize +20
+nnoremap <Up>    :resize +20
+nnoremap <Down>  :resize -20
+
 " ----- other double key bindings
 nnoremap =j :%!python -m json.tool<CR>
 
@@ -24,20 +30,9 @@ nnoremap dD 0D
 " delete all ;
 nnoremap d; :%s/\;$//g
 
-" resize
-nnoremap <Left>  :vertical resize -20
-nnoremap <Right> :vertical resize +20
-nnoremap <Up>    :resize +20
-nnoremap <Down>  :resize -20
-
 " ----- color scheme
 let g:solarized_termcolors=16
 colorscheme seoul256
 
 " ----- unfold when open a new file
 autocmd BufWinEnter * normal zR
-
-" ----- source plugin config
-for f in split(glob('~/.stack.d/vim/*.vimrc'), '\n')
-  exe 'source' f
-endfor
