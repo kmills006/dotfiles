@@ -1,4 +1,3 @@
-source ~/.stack.d/.vimrc.before
 source ~/.stack.d/.vimrc.bundles
 source ~/.stack.d/.vimrc.local
 

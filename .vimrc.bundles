@@ -60,6 +60,7 @@ Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'FooSoft/vim-argwrap'
+Bundle 'Chun-Yang/vim-ag-anything'
 
 " vim
 Bundle 'christoomey/vim-sort-motion'
