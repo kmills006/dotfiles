@@ -11,7 +11,6 @@ setopt noflowcontrol
 # emacs bindings
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
-
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
 bindkey "^B" backward-char
