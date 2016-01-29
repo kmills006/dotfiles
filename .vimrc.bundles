@@ -13,7 +13,8 @@ Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'kristijanhusak/vim-multiple-cursors'
 Bundle 'vim-scripts/sessionman.vim'
-Bundle 'matchit.zip' " enhance %
+" enhance %
+Bundle 'matchit.zip'
 Bundle 'bling/vim-airline'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nathanaelkane/vim-indent-guides'
