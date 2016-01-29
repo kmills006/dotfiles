@@ -1,65 +1,54 @@
-set nocompatible        " Must be first line
-set background=dark     " Assume a dark background
-
-filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+" required by bundle {
+  set nocompatible
+  filetype off
+  set rtp+=~/.vim/bundle/vundle
+  call vundle#rc()
+" }
 
 Bundle 'gmarik/vundle'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'kristijanhusak/vim-multiple-cursors'
 Bundle 'vim-scripts/sessionman.vim'
-Bundle 'matchit.zip'
+Bundle 'matchit.zip' " enhance %
 Bundle 'bling/vim-airline'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'flazz/vim-colorschemes'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'tpope/vim-abolish.git'
 Bundle 'osyo-manga/vim-over'
+
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-abolish.git'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-commentary'
+
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-indent'
-Bundle 'gcmt/wildfire.vim'
 
 Bundle 'reedes/vim-litecorrect'
 Bundle 'reedes/vim-textobj-sentence'
 Bundle 'reedes/vim-textobj-quote'
 Bundle 'reedes/vim-wordy'
 
+Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
+
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
-Bundle 'tpope/vim-commentary'
 Bundle 'godlygeek/tabular'
 Bundle 'majutsushi/tagbar'
-
-Bundle 'elzr/vim-json'
-Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
 Bundle 'briancollins/vim-jst'
-Bundle 'kchmck/vim-coffee-script'
-
-
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'tpope/vim-haml'
-Bundle 'rking/ag.vim'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'Rykka/lastbuf.vim'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'FooSoft/vim-argwrap'
+Bundle 'rking/ag.vim'
 Bundle 'Chun-Yang/vim-ag-anything'
 
 " vim
@@ -83,9 +72,9 @@ Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
-" Bundle 'moll/vim-node' " this works with node modules, not regular files
 Bundle 'poetic/vim-textobj-javascript'
 Bundle 'mxw/vim-jsx'
+Bundle 'elzr/vim-json'
 
 " python
 Bundle 'klen/python-mode'
@@ -94,13 +83,25 @@ Bundle 'klen/python-mode'
 Bundle 'rodjek/vim-puppet'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
 
 " tmux
 Bundle 'benmills/vimux'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'edkolev/tmuxline.vim'
+
+" css
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'groenewege/vim-less'
+
+" colorschemes
+Bundle 'flazz/vim-colorschemes'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'spf13/vim-colors'
 
 " autoformat use :Autoformat to autoformat
 Bundle "Chiel92/vim-autoformat"

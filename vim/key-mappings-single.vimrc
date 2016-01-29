@@ -1,3 +1,17 @@
+" leader
+map <space> \
+
+" use _ as g_ (till the end of line)
+nnoremap _ g_
+vnoremap _ g_
+nmap ys_ ysg_
+
+" resize
+nnoremap <Left>  :vertical resize -20
+nnoremap <Right> :vertical resize +20
+nnoremap <Up>    :resize +20
+nnoremap <Down>  :resize -20
+
 " Use ; as :
 nnoremap ; :
 
@@ -9,7 +23,7 @@ vnoremap / /\V
 nnoremap S i<CR><Esc>
 
 " quick search do not make move, only search and high light
-nnoremap # *``
+nnoremap # g*N
 vnoremap # y/<C-R>"<CR>N
 
 " make Y compatible with D
@@ -22,7 +36,6 @@ vnoremap > >gv
 " Allow using the repeat operator with a visual selection (!)
 " http://stackoverflow.com/a/8064607/127816
 vnoremap . :normal .<CR>
-
 
 " MOTION
 noremap j gj
