@@ -76,12 +76,8 @@
   set tabstop=2
   set softtabstop=2
 
-  set nowrap         " do not wrap lines
+  set wrap         " do not wrap lines
   set colorcolumn=80 " add a bar at 80 chars
-
-  set iskeyword-=.   " '.' is an end of word designator
-  set iskeyword-=#   " '#' is an end of word designator
-  set iskeyword-=-   " '-' is an end of word designator
 
   set splitright " Puts new vsplit windows to the right of the current
   set splitbelow " Puts new split windows to the bottom of the current
@@ -90,3 +86,7 @@
   set nospell    " do not do spell check
   set nogdefault " do not substitute all occurance without g flag
 " }
+
+autocmd BufNewFile,BufRead * :set iskeyword+=-
+autocmd BufNewFile,BufRead * :set iskeyword+=_
+autocmd BufNewFile,BufRead * :set iskeyword-=.

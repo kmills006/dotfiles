@@ -1,11 +1,6 @@
 " leader
 map <space> \
 
-" use _ as g_ (till the end of line)
-nnoremap _ g_
-vnoremap _ g_
-nmap ys_ ysg_
-
 " resize
 nnoremap <Left>  :vertical resize -20
 nnoremap <Right> :vertical resize +20
@@ -56,24 +51,17 @@ endfunction
 
 " Map g* keys in Normal, Operator-pending, and Visual+select
 noremap $ :call WrapRelativeMotion("$")<CR>
-noremap <End> :call WrapRelativeMotion("$")<CR>
 noremap 0 :call WrapRelativeMotion("0")<CR>
-noremap <Home> :call WrapRelativeMotion("0")<CR>
 noremap ^ :call WrapRelativeMotion("^")<CR>
-" Overwrite the operator pending $/<End> mappings from above
-" to force inclusive motion with :execute normal!
-onoremap $ v:call WrapRelativeMotion("$")<CR>
-onoremap <End> v:call WrapRelativeMotion("$")<CR>
+
 " Overwrite the Visual+select mode mappings from above
 " to ensure the correct vis_sel flag is passed to function
 vnoremap $ :<C-U>call WrapRelativeMotion("$", 1)<CR>
-vnoremap <End> :<C-U>call WrapRelativeMotion("$", 1)<CR>
 vnoremap 0 :<C-U>call WrapRelativeMotion("0", 1)<CR>
-vnoremap <Home> :<C-U>call WrapRelativeMotion("0", 1)<CR>
 vnoremap ^ :<C-U>call WrapRelativeMotion("^", 1)<CR>
 
 " switch ^ and 0
 nnoremap 0 ^
-vnoremap 0 ^
 nnoremap ^ 0
+vnoremap 0 ^
 vnoremap ^ 0
