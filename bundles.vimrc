@@ -99,6 +99,10 @@ Bundle 'groenewege/vim-less'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
+Bundle 'NLKNguyen/papercolor-theme'
 
 " autoformat use :Autoformat to autoformat
 Bundle "Chiel92/vim-autoformat"
+
+" todo management
+Bundle 'vitalk/vim-simple-todo'
