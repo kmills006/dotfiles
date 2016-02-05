@@ -7,3 +7,5 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 for f in ~/.stack.d/zsh/*.zsh; do source $f; done
+
+source ~/.githelpers
