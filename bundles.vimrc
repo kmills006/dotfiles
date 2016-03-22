@@ -106,3 +106,6 @@ Bundle "Chiel92/vim-autoformat"
 
 " todo management
 Bundle 'vitalk/vim-simple-todo'
+
+" function list
+Bundle 'functiontracker.vim'

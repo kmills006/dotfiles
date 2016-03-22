@@ -9,3 +9,5 @@ source $ZSH/oh-my-zsh.sh
 for f in ~/.stack.d/zsh/*.zsh; do source $f; done
 
 source ~/.githelpers
+source ~/.zsh-custom
+source ~/.stack.d/zsh/custom/alias.zsh

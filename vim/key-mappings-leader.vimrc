@@ -1,6 +1,6 @@
 " Map comma space to unhighlight
-" nnoremap <leader><space> :noh<cr>
-let mapleader=","
+nnoremap <leader><space> :noh<cr>
+" let mapleader=","
 
 " change "" and '' back and force
 nmap <leader>' cs"'

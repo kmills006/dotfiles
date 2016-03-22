@@ -65,3 +65,6 @@ nnoremap 0 ^
 nnoremap ^ 0
 vnoremap 0 ^
 vnoremap ^ 0
+
+
+:imap jj <Esc>

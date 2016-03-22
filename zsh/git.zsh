@@ -1,4 +1,5 @@
 alias gs='git status'
+alias g='git'
 
 # remote communicate
 alias gps='git push'
