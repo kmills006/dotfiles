@@ -16,6 +16,7 @@ Bundle 'vim-scripts/sessionman.vim'
 " enhance %
 Bundle 'matchit.zip'
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'osyo-manga/vim-over'
@@ -32,6 +33,8 @@ Bundle 'mattn/gist-vim'
 Bundle 'godlygeek/tabular'
 Bundle 'majutsushi/tagbar'
 Bundle 'pangloss/vim-javascript'
+Bundle 'isRuslan/vim-es6'
+Bundle 'crusoexia/vim-javascript-lib'
 Bundle 'briancollins/vim-jst'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'Rykka/lastbuf.vim'
@@ -99,7 +102,10 @@ Bundle 'groenewege/vim-less'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
-Bundle 'NLKNguyen/papercolor-theme'
+Bundle 'croaky/vim-colors-github'
+Bundle 'lifepillar/vim-solarized8'
+Bundle 'crusoexia/vim-monokai'
+Bundle 'dracula/vim'
 
 " autoformat use :Autoformat to autoformat
 Bundle "Chiel92/vim-autoformat"
@@ -107,5 +113,9 @@ Bundle "Chiel92/vim-autoformat"
 " todo management
 Bundle 'vitalk/vim-simple-todo'
 
-" function list
-Bundle 'functiontracker.vim'
+"jsdoc
+Bundle 'heavenshell/vim-jsdoc'
+
+" bundle
+Bundle 'reedes/vim-pencil'
+

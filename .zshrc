@@ -1,4 +1,7 @@
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="wedisagree"
+ZSH_THEME="geometry"
+
 ZSH_CUSTOM=$HOME/.stack.d/zsh/custom/
 
 # start oh-my-zsh
@@ -11,3 +14,6 @@ for f in ~/.stack.d/zsh/*.zsh; do source $f; done
 source ~/.githelpers
 source ~/.zsh-custom
 source ~/.stack.d/zsh/custom/alias.zsh
+
+export NVM_DIR="/Users/kristy/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
