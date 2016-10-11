@@ -7,8 +7,10 @@ nmap <leader>' cs"'
 nmap <leader>" cs'"
 
 " split
-nnoremap <Leader>s. :s/\.\([^(]*)\)\@!/\r./g<CR>:noh<cr>
+nnoremap <Leader>s.       :s/\.\([^(]*)\)\@!/\r./g<CR>:noh<cr>
 nnoremap <Leader>s<space> :s/\(\S\)\s/\1\r/g<CR>:noh<cr>
+nnoremap <Leader>s+       :s/\(+\)\s/\1\r/g<CR>:noh<cr>
+nnoremap <Leader>s,       :s/\(,\)\s/\1\r/g<CR>:noh<cr>
 
 " ----- source vim and edit vim
 nnoremap <leader>ve :e ~/.stack.d/.vimrc.local<cr>

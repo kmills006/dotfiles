@@ -1,5 +1,4 @@
 " General {
-  set background=dark         " Assume a dark background
   filetype plugin indent on   " Automatically detect file types.
   set mouse=a                 " Automatically enable mouse usage
   set mousehide               " Hide the mouse cursor while typing
@@ -59,7 +58,7 @@
   set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
   set scrolljump=5                " Lines to scroll when cursor leaves screen
   set scrolloff=3                 " Minimum lines to keep above and below cursor
-  set foldenable                  " Auto fold code
+  set nofoldenable                " Do not fold by default
   set list
   set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
@@ -76,7 +75,7 @@
   set tabstop=2
   set softtabstop=2
 
-  set wrap         " do not wrap lines
+  set wrap           " wrap lines
   set colorcolumn=80 " add a bar at 80 chars
 
   set splitright " Puts new vsplit windows to the right of the current

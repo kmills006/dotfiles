@@ -5,48 +5,24 @@
   call vundle#rc()
 " }
 
-Bundle 'gmarik/vundle'
+" utils
+Bundle 'VundleVim/Vundle.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
+" config
+Bundle 'tpope/vim-sensible'
+
+" commands
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'kristijanhusak/vim-multiple-cursors'
-Bundle 'vim-scripts/sessionman.vim'
-" enhance %
-Bundle 'matchit.zip'
-Bundle 'bling/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'osyo-manga/vim-over'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-abolish.git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'godlygeek/tabular'
-Bundle 'majutsushi/tagbar'
-Bundle 'pangloss/vim-javascript'
-Bundle 'isRuslan/vim-es6'
-Bundle 'crusoexia/vim-javascript-lib'
-Bundle 'briancollins/vim-jst'
-Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'Rykka/lastbuf.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'FooSoft/vim-argwrap'
 Bundle 'rking/ag.vim'
-Bundle 'Chun-Yang/vim-ag-anything'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'rstacruz/sparkup'
-Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-abolish.git'
+Bundle 'vim-scripts/sessionman.vim'
+Bundle 'Rykka/lastbuf.vim'
+Bundle 'metakirby5/codi.vim'
 
 " text-objects
 Bundle 'vim-scripts/argtextobj.vim'
@@ -57,12 +33,28 @@ Bundle 'kana/vim-textobj-entire'
 Bundle 'reedes/vim-textobj-sentence'
 Bundle 'reedes/vim-textobj-quote'
 Bundle 'reedes/vim-wordy'
-Bundle 'reedes/vim-litecorrect'
+Bundle 'Chun-Yang/vim-textobj-anyblock'
+Bundle 'Chun-Yang/vim-textobj-chunk'
+Bundle 'kristijanhusak/vim-multiple-cursors'
+
+" actions
+Bundle 'Chun-Yang/vim-action-ag'
+Bundle 'Chun-Yang/vim-action-macro'
+Bundle 'Chun-Yang/vim-operator-replace'
+Bundle 'FooSoft/vim-argwrap'
+Bundle 'tpope/vim-repeat'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'osyo-manga/vim-over'
 
 " motions
 Bundle 'tpope/vim-commentary'
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'bkad/CamelCaseMotion'
+Bundle 'rhysd/clever-f.vim'
+Bundle 'Lokaltog/vim-easymotion'
+" NOTE: enhance %
+Bundle 'matchit.zip'
+Bundle 'tpope/vim-unimpaired'
 
 " auto complete
 Bundle 'Shougo/neocomplcache'
@@ -72,12 +64,12 @@ Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'poetic/vim-textobj-javascript'
 Bundle 'mxw/vim-jsx'
 Bundle 'elzr/vim-json'
+Bundle 'pangloss/vim-javascript'
 
-" python
-Bundle 'klen/python-mode'
+" typescript
+Bundle 'leafgarland/typescript-vim'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -87,12 +79,10 @@ Bundle 'jgdavey/vim-blockle'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-endwise'
 
-" tmux
-Bundle 'benmills/vimux'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'edkolev/tmuxline.vim'
+" html
+Bundle 'rstacruz/sparkup'
 
 " css
 Bundle 'hail2u/vim-css3-syntax'
@@ -107,8 +97,29 @@ Bundle 'lifepillar/vim-solarized8'
 Bundle 'crusoexia/vim-monokai'
 Bundle 'dracula/vim'
 
-" autoformat use :Autoformat to autoformat
+" apperance
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+" NOTE: show line number with relative and absolute number
+Bundle 'Chun-Yang/numbers.vim'
+
+" syntax
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'godlygeek/tabular'
+" NOTE: autoformat use :Autoformat to autoformat
 Bundle "Chiel92/vim-autoformat"
+Bundle 'scrooloose/syntastic'
+
+" tmux
+Bundle 'benmills/vimux'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'jgdavey/vim-turbux'
+Bundle 'edkolev/tmuxline.vim'
+
+" git
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+
 
 " todo management
 Bundle 'vitalk/vim-simple-todo'
@@ -118,4 +129,3 @@ Bundle 'heavenshell/vim-jsdoc'
 
 " bundle
 Bundle 'reedes/vim-pencil'
-

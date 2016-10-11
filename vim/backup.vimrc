@@ -26,4 +26,3 @@ function! InitializeDirectories()
   endfor
 endfunction
 call InitializeDirectories()
-

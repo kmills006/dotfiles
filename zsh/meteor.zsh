@@ -1,7 +1,7 @@
 alias m='meteor'
 alias mrt='meteor'
 alias mg='yo meteor-poetic'
-alias ms='[ -f settings-development.json ] && meteor run --settings settings-development.json || [ -f settings.development.json ] && meteor run --settings settings.development.json || meteor run'
+alias ms='[ -f settings.json ] && meteor run --settings settings.json || [ -f settings-development.json ] && meteor run --settings settings-development.json || [ -f settings.development.json ] && meteor run --settings settings.development.json || meteor run'
 alias mh='heroku config:add METEOR_SETTINGS="$(cat settings-production.json)"'
 alias mhp='heroku config:add METEOR_SETTINGS="$(cat settings-production.json)"'
 alias mhs='heroku config:add METEOR_SETTINGS="$(cat settings-staging.json)"'

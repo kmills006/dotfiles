@@ -7,10 +7,6 @@ inoremap <c-f> <ESC>lli
 inoremap <c-e> <ESC>A
 inoremap <c-a> <ESC>I
 
-" find next
-nnoremap <c-f> ;
-vnoremap <c-f> ;
-
 " command mode shortcut
 cnoremap <c-b> <Left>
 cnoremap <c-f> <Right>

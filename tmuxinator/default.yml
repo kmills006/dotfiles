@@ -3,7 +3,7 @@
 name: <%= name %>
 root: ~/code/<%= name %>
 
-pre: mkdir -p ~/Work/<%= name %>
+pre: mkdir -p ~/Work/<%= name %>; [ -d ~/Work/<%= name %>/.git ] || git clone git@github.com:poetic/<%= name %>.git ~/Work/<%= name %>
 
 windows:
   - main:

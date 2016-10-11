@@ -4,33 +4,13 @@
 # However, you can run multiple times,
 # it should not change anything after the first run.
 
-# ----- remove fork files used by spf13-vim
-vimrc_forc_files=(
-  '.vimrc.before.fork'
-  '.vimrc.bundles.fork'
-  '.vimrc.fork'
-)
-for file in "${vimrc_forc_files[@]}"; do
-  if [ -e "$HOME/${file}" ]; then
-    rm -i "$HOME/${file}"
-  fi
-done
-
-remove_link() {
-  if [ -h "$HOME/$1" ] ; then rm -i "$HOME/$1"; fi
+add_link() {
+  # remove file
+  mv -i "$HOME/$1" "$HOME/$1.backup"
+  # add soft link
+  ln -s "$PWD/$1" "$HOME/$1"
 }
 
-# ----- rewrite vimrc files
-vimrc_files=('.vimrc.before.local' '.vimrc.bundles.local' '.vimrc.local')
-for file in "${vimrc_files[@]}"; do
-  remove_link $file
-  echo "exe 'source' \"$PWD/${file}\"" > "$HOME/${file}"
-done
-
-# ----- rewrite .zshrc file
-remove_link '.zshrc'
-echo "source $PWD/.zshrc" > "$HOME/.zshrc"
-
-# ----- rewrite .tmux.conf file
-remove_link '.tmux.conf'
-echo "run-shell 'tmux source-file $PWD/.tmux.conf'" > "$HOME/.tmux.conf"
+add_link '.vimrc'
+add_link '.zshrc'
+add_link '.tmux.conf'

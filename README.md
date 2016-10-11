@@ -1,27 +1,31 @@
-# To add soft links
-./initialize
+# Requirement:
 
-# Use tmuxinator custom template
-File: ```tmuxinator/sample.yml```
-
-#Create New Workflow Default Settings
-
-##File to edit:
-your gems version or path might be different to double check on that use
-"gem which tmuxinator" this provide you the full path example
 ```
-/Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator.rb
+# the default vim from mac does not work for clipboard
+# https://evertpot.com/osx-tmux-vim-copy-paste-clipboard
+brew install vim
+brew install reattach-to-user-namespace
+brew install the_silver_searcher
 ```
 
-The file is going to be a "READ ONLY" file so you might not be able
-to save in on vim depending on the settings you have. ```vim /Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator/assets/sample.yml```
+# Replace default dot files:
+```
+rm -f ~/.vimrc && ln -s ~/.stack.d/.vimrc ~/.vimrc
+rm -f ~/.zshrc && ln -s ~/.stack.d/.zshrc ~/.zshrc
+rm -f ~/.tmux.conf && ln -s ~/.stack.d/.tmux.conf ~/.tmux.conf
+rm -f /Users/trent/Library/Application\ Support/Karabiner/private.xml && ln -s ~/.stack.d/./Karabiner/private.xml /Users/trent/Library/Application\ Support/Karabiner/private.xml
 
-If you want to open it with sublime instead you can just use: ```subl /Library/Ruby/Gems/2.0.0/gems/tmuxinator-0.6.11/lib/tmuxinator/assets/sample.yml```
+rm -f ~/.tmuxinator/default.yml && ln -s ~/.stack.d/tmuxinator/default.yml ~/.tmuxinator/default.yml
+mkdir -p ~/.tmuxinator/completion
+ln -s ~/.stack.d/tmuxinator/_tmuxinator ~/.tmuxinator/completion/_tmuxinator
 
-It will ask you for your password in order to save the file after that you all set ready to go with your own default file.
+rm -f ~/.gitignore_global && ln -s ~/.stack.d/.gitignore_global ~/.gitignore_global
+```
 
-##To create new workflow:
-```tmuxinator open [workflow-name]```
+# Git ignore global
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
 
-##To use:
-```tmuxinator start [workflow-name]```
+# Enter to open in finder
+Open Karabiner, search finder, check 'use enter to open'
