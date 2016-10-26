@@ -1,5 +1,4 @@
 # rbenv configuration
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Ruby aliases
 alias rake="noglob rake" # necessary to make rake work inside of zsh

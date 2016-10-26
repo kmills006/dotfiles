@@ -67,6 +67,7 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'mxw/vim-jsx'
 Bundle 'elzr/vim-json'
 Bundle 'pangloss/vim-javascript'
+Bundle 'crusoexia/vim-javascript-lib'
 
 " typescript
 Bundle 'leafgarland/typescript-vim'
@@ -94,7 +95,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
 Bundle 'croaky/vim-colors-github'
 Bundle 'lifepillar/vim-solarized8'
-Bundle 'crusoexia/vim-monokai'
 Bundle 'dracula/vim'
 
 " apperance

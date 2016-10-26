@@ -1,10 +1,9 @@
 " " symbols , , , , , , and 
 let g:airline#extensions#bufferline#enabled = 0
-" let g:airline_theme = 'laederon'
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline_theme = 'laederon'
+let g:airline_powerline_fonts = 1
 
 " patch airline color theme, use black for unsaved
 let g:airline_theme_patch_func = 'UseBlackToShowUnsaved'
