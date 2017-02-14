@@ -129,3 +129,6 @@ Bundle 'heavenshell/vim-jsdoc'
 
 " bundle
 Bundle 'reedes/vim-pencil'
+
+" TaskList
+Bundle 'TaskList.vim'
