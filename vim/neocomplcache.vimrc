@@ -4,7 +4,7 @@ let g:neocomplcache_enable_auto_delimiter = 1
 let g:neocomplcache_max_list = 15
 let g:neocomplcache_force_overwrite_completefunc = 1
 
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 let g:neocomplcache_auto_completion_start_length = 2
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " recognize f,

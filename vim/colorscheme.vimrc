@@ -6,6 +6,7 @@
 " set t_Co=256
 " colorscheme monokai
 
+" FAVORITE
 syntax on
 colorscheme monokai
 set t_Co=256
