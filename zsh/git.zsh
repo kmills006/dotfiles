@@ -48,6 +48,7 @@ alias gmn='git merge --no-ff'
 # stash
 alias gst='git stash'
 alias gap='git stash apply --index'
+alias gst='git stash clear'
 
 # log
 alias gl='git log'

@@ -10,4 +10,7 @@ alias slocal="node ~/code/stanza-cli/bin/stanza"
 export LOGIN_IP=ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p' | head -1
 export FIX_REVIEWS=true
 
+alias code='cd ~/code'
+alias stack='cd ~/.stack.d'
+alias prn='cd ~/Dropbox/pull-request-notes'
 
