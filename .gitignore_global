@@ -1,2 +1,5 @@
 Session.vim
-.DS_Store
+node_modules
+.DS_STORE
+.env
+.nvmrc
