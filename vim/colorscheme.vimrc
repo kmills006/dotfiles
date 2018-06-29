@@ -1,18 +1,15 @@
 " syntax on
 " color dracula
 
-" syntax enable
+syntax on
+
+" colorscheme iceberg
+
+" favorite
+colorscheme monokai
 " set background=dark
 " set t_Co=256
-" colorscheme monokai
 
-" FAVORITE
-syntax on
-colorscheme monokai
-set t_Co=256
-
-" " colorscheme github
-" " set background=light
-
-" colorscheme solarized8_dark_flat
-" colorscheme solarized8_dark_high
+" light
+" colorscheme github
+" set background=light
