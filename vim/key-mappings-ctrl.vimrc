@@ -1,5 +1,5 @@
 " open new tab
-nnoremap <c-t> :tabnew<CR>
+nnoremap <c-i> :tabnew<CR>
 
 " navigation in insert mode
 inoremap <c-b> <ESC>hli
