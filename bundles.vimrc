@@ -1,7 +1,7 @@
 " required by bundle {
   set nocompatible
   filetype off
-  set rtp+=~/.vim/bundle/vundle
+  set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#rc()
 " }
 
@@ -61,6 +61,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Chun-Yang/vim-snippets'
 Bundle 'Chun-Yang/auto-pairs'
+Bundle 'Valloric/YouCompleteMe'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
@@ -69,8 +70,9 @@ Bundle 'elzr/vim-json'
 Bundle 'pangloss/vim-javascript'
 Bundle 'crusoexia/vim-javascript-lib'
 
-" typescript
+" Typescript
 Bundle 'leafgarland/typescript-vim'
+Bundle 'Quramy/tsuquyomi'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -90,12 +92,15 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'groenewege/vim-less'
 
 " colorschemes
-Bundle 'flazz/vim-colorschemes'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
-Bundle 'croaky/vim-colors-github'
-Bundle 'lifepillar/vim-solarized8'
-Bundle 'dracula/vim'
+" Bundle 'flazz/vim-colorschemes'
+" Bundle 'altercation/vim-colors-solarized'
+" Bundle 'spf13/vim-colors'
+" Bundle 'croaky/vim-colors-github'
+" Bundle 'lifepillar/vim-solarized8'
+" Bundle 'dracula/vim'
+Bundle 'crusoexia/vim-monokai'
+Bundle 'herrbischoff/cobalt2.vim'
+Bundle 'cocopon/iceberg.vim'
 
 " apperance
 Bundle 'vim-airline/vim-airline'
@@ -127,8 +132,8 @@ Bundle 'vitalk/vim-simple-todo'
 "jsdoc
 Bundle 'heavenshell/vim-jsdoc'
 
-" bundle
-Bundle 'reedes/vim-pencil'
+" dash
+Bundle 'rizzatti/dash.vim'
 
-" TaskList
-Bundle 'TaskList.vim'
+" linting
+Bundle 'w0rp/ale'
