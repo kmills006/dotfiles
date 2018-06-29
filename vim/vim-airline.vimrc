@@ -1,8 +1,12 @@
  " symbols , , , , , , and 
 let g:airline#extensions#bufferline#enabled = 0
+let g:airline#extensions#ale#enabled = 1
+
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+" let g:airline_theme = 'tomorrow'
 let g:airline_theme = 'laederon'
+" let g:airline_theme = 'raven'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -14,8 +18,7 @@ let g:airline#extensions#tabline#enabled = 1
 "         \ a:palette.insert_modified,
 "         \ a:palette.visual_modified,
 "         \ a:palette.replace_modified ]
-"     for colors in values(palette_modified)
-"       let colors[3] = 16
+"     for colors in values(palette_modified) let colors[3] = 16
 "     endfor
 "   endfor
 " endfunction
