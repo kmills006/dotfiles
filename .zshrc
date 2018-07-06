@@ -20,25 +20,24 @@ for f in ~/.stack.d/zsh/projects/*.zsh; do source $f; done
 
 source ~/.stack.d/zsh/custom/alias.zsh
 
-export NVM_DIR="/Users/kristy/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+## export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# if command -v tmux>/dev/null; then   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux fi
+## if command -v tmux>/dev/null; then   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux fi
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-###-tns-completion-start-###
-if [ -f /Users/kristy/.tnsrc ]; then
-    source /Users/kristy/.tnsrc
-fi
-###-tns-completion-end-###
+## tabtab source for serverless package
+## uninstall by removing these lines or running `tabtab uninstall serverless`
+#[[ -f /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+## tabtab source for sls package
+## uninstall by removing these lines or running `tabtab uninstall sls`
+#[[ -f /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kristy/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+####-tns-completion-start-###
+#if [ -f /Users/kristy/.tnsrc ]; then
+#    source /Users/kristy/.tnsrc
+#fi
+####-tns-completion-end-###
+export TERM=xterm-256color-italic

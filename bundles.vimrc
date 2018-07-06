@@ -61,7 +61,6 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Chun-Yang/vim-snippets'
 Bundle 'Chun-Yang/auto-pairs'
-Bundle 'Valloric/YouCompleteMe'
 
 " javascript
 Bundle 'othree/javascript-libraries-syntax.vim'
