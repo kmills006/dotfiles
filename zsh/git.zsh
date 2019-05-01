@@ -9,6 +9,7 @@ alias gsp='git push'
 alias gpsp='git push production'
 alias gpsh='git push heroku'
 alias gpl='git pull && git submodule foreach git pull origin master'
+alias fetch='git fetch --all'
 
 # git bisect
 alias gbs='git bisect'
@@ -18,12 +19,13 @@ alias ga='git add -A'
 alias gb='git branch'
 alias gc='git commit -m'
 alias gac='ga && gc'
+alias gca='g commit --amend'
 
 # step down
-alias go='git checkout'
+alias goc='git checkout'
 alias gou='git clean -id' # remove untracked files
 alias gob='git reset HEAD'
-alias goc='git reset --soft HEAD~1'
+#alias goc='git reset --soft HEAD~1'
 alias gocc='git reset --hard HEAD~1' # c means confirm
 alias goch='git reset --hard' # h means hash
 alias gor='git checkout --track'

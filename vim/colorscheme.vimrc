@@ -1,12 +1,8 @@
-" syntax on
-" color dracula
-
-syntax on
-
-" colorscheme iceberg
-
 " favorite
-colorscheme monokai
+syntax on
+set termguicolors
+
+colorscheme monokai_pro
 
 highlight Comment cterm=italic
 highlight Comment cterm=italic
@@ -17,9 +13,6 @@ highlight Type    cterm=italic
 highlight Type    gui=italic
 highlight htmlArg cterm=italic
 highlight htmlArg gui=italic
-
-" set background=dark
-" set t_Co=256
 
 " light
 " colorscheme github

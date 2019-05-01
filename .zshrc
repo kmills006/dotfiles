@@ -40,4 +40,8 @@ source ~/.stack.d/zsh/custom/alias.zsh
 #    source /Users/kristy/.tnsrc
 #fi
 ####-tns-completion-end-###
+#
 export TERM=xterm-256color-italic
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8

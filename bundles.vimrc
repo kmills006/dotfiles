@@ -59,6 +59,7 @@ Bundle 'tpope/vim-unimpaired'
 " auto complete
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/unite.vim'
 Bundle 'Chun-Yang/vim-snippets'
 Bundle 'Chun-Yang/auto-pairs'
 
@@ -69,9 +70,14 @@ Bundle 'elzr/vim-json'
 Bundle 'pangloss/vim-javascript'
 Bundle 'crusoexia/vim-javascript-lib'
 
+" Graphql
+Bundle 'jparise/vim-graphql'
+
 " Typescript
 Bundle 'leafgarland/typescript-vim'
+Bundle 'Quramy/vim-dtsm'
 Bundle 'Quramy/tsuquyomi'
+Bundle 'ianks/vim-tsx'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -91,15 +97,16 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'groenewege/vim-less'
 
 " colorschemes
-" Bundle 'flazz/vim-colorschemes'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'slavkobojanic/horizon-vim'
 " Bundle 'altercation/vim-colors-solarized'
 " Bundle 'spf13/vim-colors'
 " Bundle 'croaky/vim-colors-github'
 " Bundle 'lifepillar/vim-solarized8'
 " Bundle 'dracula/vim'
-Bundle 'crusoexia/vim-monokai'
-Bundle 'herrbischoff/cobalt2.vim'
-Bundle 'cocopon/iceberg.vim'
+" Bundle 'crusoexia/vim-monokai'
+Bundle 'ErichDonGubler/vim-sublime-monokai'
+Bundle 'phanviet/vim-monokai-pro'
 
 " apperance
 Bundle 'vim-airline/vim-airline'
@@ -127,6 +134,7 @@ Bundle 'airblade/vim-gitgutter'
 
 " todo management
 Bundle 'vitalk/vim-simple-todo'
+Bundle 'vim-scripts/TaskList.vim'
 
 "jsdoc
 Bundle 'heavenshell/vim-jsdoc'
@@ -136,3 +144,9 @@ Bundle 'rizzatti/dash.vim'
 
 " linting
 Bundle 'w0rp/ale'
+
+" YouCompleteMe https://github.com/Valloric/YouCompleteMe
+Bundle 'Valloric/YouCompleteMe'
+
+" Notes
+Bundle 'xolox/vim-notes'
