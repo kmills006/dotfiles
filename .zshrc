@@ -1,11 +1,12 @@
 PATH="/usr/local/bin:$(getconf PATH)"
 
-ZSH_THEME=avit
+# ZSH_THEME=avit
 # ZSH_THEME=kphoen
 # ZSH_THEME=wedisagree
 # ZSH_THEME=theunraveler
-# ZSH_THEME="geometry"
+ZSH_THEME="geometry"
 # ZSH_THEME="cobalt2"
+# ZSH_THEME="purepower"
 
 
 ZSH_CUSTOM=$HOME/.stack.d/zsh/custom/
@@ -16,11 +17,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 for f in ~/.stack.d/zsh/*.zsh; do source $f; done
-for f in ~/.stack.d/zsh/projects/*.zsh; do source $f; done
+# for f in ~/.stack.d/zsh/projects/*.zsh; do source $f; done
 
 source ~/.stack.d/zsh/custom/alias.zsh
 
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
+
 #export PATH="$HOME/.rbenv/bin:$PATH"
 ## export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -45,3 +47,7 @@ export TERM=xterm-256color-italic
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Powerlevel10k
+# source ~/.stack.d/zsh/custom/themes/.purepower
+# source ~/.stack.d/zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme*

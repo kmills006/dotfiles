@@ -99,6 +99,8 @@ Bundle 'groenewege/vim-less'
 " colorschemes
 Bundle 'flazz/vim-colorschemes'
 Bundle 'slavkobojanic/horizon-vim'
+Bundle 'arcticicestudio/nord-vim'
+Bundle 'cormacrelf/vim-colors-github'
 " Bundle 'altercation/vim-colors-solarized'
 " Bundle 'spf13/vim-colors'
 " Bundle 'croaky/vim-colors-github'
@@ -134,7 +136,7 @@ Bundle 'airblade/vim-gitgutter'
 
 " todo management
 Bundle 'vitalk/vim-simple-todo'
-Bundle 'vim-scripts/TaskList.vim'
+Bundle 'freitass/todo.txt-vim'
 
 "jsdoc
 Bundle 'heavenshell/vim-jsdoc'
@@ -149,4 +151,8 @@ Bundle 'w0rp/ale'
 Bundle 'Valloric/YouCompleteMe'
 
 " Notes
-Bundle 'xolox/vim-notes'
+" Bundle 'xolox/vim-notes'
+
+
+" Powerline 10k
+" Bundle 'romkatv/powerlevel10k'
