@@ -6,6 +6,7 @@
 brew install vim
 brew install reattach-to-user-namespace
 brew install the_silver_searcher
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 ```
 
 # Replace default dot files:
