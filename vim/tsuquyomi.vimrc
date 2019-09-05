@@ -4,4 +4,4 @@ autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()
 
 let g:tsuquyomi_single_quote_import=1
 " let g:tsuquyomi_disable_quickfix = 1
-" let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:syntastic_typescript_checkers = ['tsuquyomi']

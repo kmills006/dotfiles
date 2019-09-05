@@ -78,6 +78,7 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'Quramy/vim-dtsm'
 Bundle 'Quramy/tsuquyomi'
 Bundle 'ianks/vim-tsx'
+Bundle 'Shougo/vimproc.vim'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
