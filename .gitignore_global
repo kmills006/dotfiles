@@ -5,7 +5,17 @@ node_modules
 .nvmrc
 dist/
 platforms/ios/build
+
 lerna-debug.log
 yarn-error.log
+
 TODO
 todo.txt
+
+.next/
+
+.history/
+.vscode/
+
+.tool-versions
+vendor/
