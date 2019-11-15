@@ -1,14 +1,6 @@
 PATH="/usr/local/bin:$(getconf PATH)"
 
-# ZSH_THEME=avit
-# ZSH_THEME=kphoen
-# ZSH_THEME=wedisagree
-# ZSH_THEME=theunraveler
 ZSH_THEME="geometry"
-# ZSH_THEME="cobalt2"
-# ZSH_THEME="purepower"
-
-
 ZSH_CUSTOM=$HOME/.stack.d/zsh/custom/
 
 # start oh-my-zsh
