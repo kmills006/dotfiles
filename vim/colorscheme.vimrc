@@ -3,8 +3,6 @@ syntax on
 set termguicolors
 
 colorscheme monokai_pro
-" colorscheme github
-"colorscheme nord
 
 highlight Comment cterm=italic
 highlight Comment cterm=italic

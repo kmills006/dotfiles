@@ -89,6 +89,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
+Bundle 'ngmy/vim-rubocop'
 
 " html
 Bundle 'rstacruz/sparkup'
@@ -98,18 +99,9 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'groenewege/vim-less'
 
 " colorschemes
-Bundle 'flazz/vim-colorschemes'
-Bundle 'slavkobojanic/horizon-vim'
-Bundle 'arcticicestudio/nord-vim'
 Bundle 'cormacrelf/vim-colors-github'
-" Bundle 'altercation/vim-colors-solarized'
-" Bundle 'spf13/vim-colors'
-" Bundle 'croaky/vim-colors-github'
-" Bundle 'lifepillar/vim-solarized8'
-" Bundle 'dracula/vim'
-" Bundle 'crusoexia/vim-monokai'
-Bundle 'ErichDonGubler/vim-sublime-monokai'
 Bundle 'phanviet/vim-monokai-pro'
+
 
 " apperance
 Bundle 'vim-airline/vim-airline'
@@ -146,14 +138,10 @@ Bundle 'heavenshell/vim-jsdoc'
 Bundle 'rizzatti/dash.vim'
 
 " linting
-Bundle 'w0rp/ale'
+Bundle 'dense-analysis/ale'
 
 " YouCompleteMe https://github.com/Valloric/YouCompleteMe
 Bundle 'Valloric/YouCompleteMe'
 
-" Notes
-" Bundle 'xolox/vim-notes'
-
-
-" Powerline 10k
-" Bundle 'romkatv/powerlevel10k'
+" Markdown Preview
+Bundle 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }

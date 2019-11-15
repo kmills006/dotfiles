@@ -41,7 +41,8 @@ alias gdc='git diff HEAD^ HEAD'
 # branch
 alias gba='git branch --all'
 alias gbd='git branch -d'
-alias gbc='git branch --merged development | grep -v "\* development" | xargs -n 1 git branch -d' # clean git branches
+# alias gbc='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d' # clean git branches
+alias gcb='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gbD='git branch -D'
 alias gbdr='git push origin --delete'
 alias gm='git merge'

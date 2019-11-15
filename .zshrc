@@ -13,14 +13,14 @@ for f in ~/.stack.d/zsh/*.zsh; do source $f; done
 
 source ~/.stack.d/zsh/custom/alias.zsh
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 #export PATH="$HOME/.rbenv/bin:$PATH"
 ## export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-## if command -v tmux>/dev/null; then   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux fi
+# if command -v tmux>/dev/null; then   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux fi
 
 ## tabtab source for serverless package
 ## uninstall by removing these lines or running `tabtab uninstall serverless`
@@ -35,11 +35,16 @@ eval "$(rbenv init -)"
 #fi
 ####-tns-completion-end-###
 #
+
 export TERM=xterm-256color-italic
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Powerlevel10k
 # source ~/.stack.d/zsh/custom/themes/.purepower
 # source ~/.stack.d/zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme*
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/kristy/.asdf/installs/nodejs/12.10.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/kristy/.asdf/installs/nodejs/12.10.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
