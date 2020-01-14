@@ -10,7 +10,3 @@ alias nbr='npm run browser'
 alias nl='npm run lint'
 alias nf='npm run fix'
 alias ni='npm install'
-
-
-alias ydbm='yarn db:migrate'
-alias ygm='yarn migration:generate'
