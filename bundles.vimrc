@@ -145,3 +145,9 @@ Bundle 'Valloric/YouCompleteMe'
 
 " Markdown Preview
 Bundle 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+" Dart
+Bundle 'dart-lang/dart-vim-plugin'
+Bundle 'thosakwe/vim-flutter'
+Bundle 'natebosch/vim-lsc'
+Bundle 'natebosch/vim-lsc-dart'
