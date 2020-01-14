@@ -19,3 +19,5 @@ todo.txt
 
 .tool-versions
 vendor/
+
+.env.local
