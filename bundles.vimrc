@@ -60,7 +60,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/unite.vim'
-Bundle 'Chun-Yang/vim-snippets'
+" Bundle 'Chun-Yang/vim-snippets'
 Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
@@ -75,10 +75,16 @@ Bundle 'jparise/vim-graphql'
 
 " Typescript
 Bundle 'leafgarland/typescript-vim'
-Bundle 'Quramy/vim-dtsm'
-Bundle 'Quramy/tsuquyomi'
-Bundle 'ianks/vim-tsx'
-Bundle 'Shougo/vimproc.vim'
+" Bundle 'Quramy/vim-dtsm'
+" Bundle 'Quramy/tsuquyomi'
+Bundle 'maxmellon/vim-jsx-pretty'
+" Bundle 'Shougo/vimproc.vim'
+
+" Bundle 'ianks/vim-tsx'
+
+" CoC
+Bundle 'neoclide/coc.nvim', {'branch': 'release'}
+Bundle 'scalameta/coc-metals'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -101,6 +107,8 @@ Bundle 'groenewege/vim-less'
 " colorschemes
 Bundle 'cormacrelf/vim-colors-github'
 Bundle 'phanviet/vim-monokai-pro'
+Bundle 'herrbischoff/cobalt2.vim'
+Bundle 'haishanh/night-owl.vim'
 
 
 " apperance
@@ -140,9 +148,6 @@ Bundle 'rizzatti/dash.vim'
 " linting
 Bundle 'dense-analysis/ale'
 
-" YouCompleteMe https://github.com/Valloric/YouCompleteMe
-Bundle 'Valloric/YouCompleteMe'
-
 " Markdown Preview
 Bundle 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
@@ -151,3 +156,10 @@ Bundle 'dart-lang/dart-vim-plugin'
 Bundle 'thosakwe/vim-flutter'
 Bundle 'natebosch/vim-lsc'
 Bundle 'natebosch/vim-lsc-dart'
+
+" Scala
+Plugin 'derekwyatt/vim-scala'
+
+" fzf
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'

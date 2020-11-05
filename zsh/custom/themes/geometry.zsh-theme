@@ -206,12 +206,16 @@ prompt_geometry_set_title() {
   prompt_geometry_print_title '%~'
 }
 
+prompt_aws_profile() {
+  echo "aws:$(aws_profile)"
+}
+
 prompt_geometry_render() {
   PROMPT="
  %(?.$GEOMETRY_PROMPT.$GEOMETRY_EXIT_VALUE) %F{$GEOMETRY_COLOR_DIR}%3~%f "
 
   PROMPT2=" $GEOMETRY_SYMBOL_RPROMPT "
-  RPROMPT="$(prompt_geometry_git_info)%{$reset_color%}"
+  RPROMPT="$(prompt_aws_profile)$(prompt_geometry_git_info)%{$reset_color%}"
 }
 
 prompt_geometry_setup() {

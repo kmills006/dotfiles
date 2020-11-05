@@ -25,9 +25,9 @@ alias gca='g commit --amend'
 alias goc='git checkout'
 alias gou='git clean -id' # remove untracked files
 alias gob='git reset HEAD'
-#alias goc='git reset --soft HEAD~1'
-alias gocc='git reset --hard HEAD~1' # c means confirm
-alias goch='git reset --hard' # h means hash
+alias gors='git reset --soft HEAD~1'
+alias gorc='git reset --hard HEAD~1' # c means confirm
+alias goth='git reset --hard' # h means hash
 alias gor='git checkout --track'
 alias grm='git rm -r --cached .'
 
@@ -41,8 +41,8 @@ alias gdc='git diff HEAD^ HEAD'
 # branch
 alias gba='git branch --all'
 alias gbd='git branch -d'
-# alias gbc='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d' # clean git branches
-alias gcb='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+alias gcmain='git branch --merged main | grep -v "\* main" | xargs -n 1 git branch -d'
+alias gcmaster='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gbD='git branch -D'
 alias gbdr='git push origin --delete'
 alias gm='git merge'
@@ -60,3 +60,5 @@ alias glo='git log --oneline --decorate'
 alias glc='git log --pretty=format:"%s"'
 alias glast='git log -1 --pretty=format:"%s" | pbcopy'
 alias stree='open -a SourceTree'
+
+# alias copr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -

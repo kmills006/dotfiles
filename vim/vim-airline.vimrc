@@ -8,11 +8,15 @@ let g:airline_right_sep=''
 " let g:airline_theme = 'laederon'
 " let g:airline_theme = 'raven'
 "
-let g:airline_theme = "github"
+" let g:airline_theme = "github"
+let g:airline_theme = "molokai"
+" let g:airline_theme = "atomic"
+" let g:airline_theme = "random"
 let g:lightline = { 'colorscheme': 'github' }
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " " patch airline color theme, use black for unsaved
 " let g:airline_theme_patch_func = 'UseBlackToShowUnsaved'

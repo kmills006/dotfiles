@@ -1,8 +1,18 @@
-" favorite
-syntax on
-set termguicolors
+"  favorite
+ syntax on
+ set termguicolors
 
+" colorscheme night-owl
 colorscheme monokai_pro
+
+" highlight SpecialKey ctermfg=1
+" set list
+" set listchars=space:T>
+
+" syntax enable
+
+" " You need a 256-color or truecolor terminal
+" " and you may want one that supports xterm sequences for :terminal
 
 highlight Comment cterm=italic
 highlight Comment cterm=italic

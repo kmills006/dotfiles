@@ -1,1 +1,0 @@
-alias pd='prisma deploy'

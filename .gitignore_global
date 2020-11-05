@@ -15,9 +15,10 @@ todo.txt
 .next/
 
 .history/
-.vscode/
 
 .tool-versions
 vendor/
 
 .env.local
+
+.idea/

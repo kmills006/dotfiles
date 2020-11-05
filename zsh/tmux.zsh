@@ -4,6 +4,7 @@ alias tmk='tmux kill-session -t'
 alias tmo='tmuxinator open' # create or open a tmuxinator project
 alias tml='tmux list-sessions'
 alias tmd='tmuxinator delete'
+alias tmr='tmux rename-window'
 
 # tmuxinator autocomplition
 fpath=($HOME/.tmuxinator/completion ${fpath})

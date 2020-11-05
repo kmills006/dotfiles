@@ -5,3 +5,6 @@ let g:syntastic_enable_signs=1
 
 " eslint
 let g:syntastic_javascript_checkers=['tslint']
+
+" dart
+let g:loaded_syntastic_dart_dartanalyzer_checker = 0
