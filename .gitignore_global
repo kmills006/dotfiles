@@ -22,3 +22,6 @@ vendor/
 .env.local
 
 .idea/
+
+notes.txt
+repo.org
