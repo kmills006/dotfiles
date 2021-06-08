@@ -75,16 +75,11 @@ Bundle 'jparise/vim-graphql'
 
 " Typescript
 Bundle 'leafgarland/typescript-vim'
-" Bundle 'Quramy/vim-dtsm'
-" Bundle 'Quramy/tsuquyomi'
 Bundle 'maxmellon/vim-jsx-pretty'
-" Bundle 'Shougo/vimproc.vim'
-
-" Bundle 'ianks/vim-tsx'
 
 " CoC
 Bundle 'neoclide/coc.nvim', {'branch': 'release'}
-Bundle 'scalameta/coc-metals'
+" Bundle 'scalameta/coc-metals'
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -146,16 +141,10 @@ Bundle 'heavenshell/vim-jsdoc'
 Bundle 'rizzatti/dash.vim'
 
 " linting
-Bundle 'dense-analysis/ale'
+" Bundle 'dense-analysis/ale'
 
 " Markdown Preview
 Bundle 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-
-" Dart
-Bundle 'dart-lang/dart-vim-plugin'
-Bundle 'thosakwe/vim-flutter'
-Bundle 'natebosch/vim-lsc'
-Bundle 'natebosch/vim-lsc-dart'
 
 " Scala
 Plugin 'derekwyatt/vim-scala'
