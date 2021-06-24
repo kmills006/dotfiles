@@ -8,10 +8,7 @@ let g:airline_right_sep=''
 " let g:airline_theme = 'laederon'
 " let g:airline_theme = 'raven'
 "
-" let g:airline_theme = "github"
-let g:airline_theme = "molokai"
-" let g:airline_theme = "atomic"
-" let g:airline_theme = "random"
+let g:airline_theme = "monochrome"
 let g:lightline = { 'colorscheme': 'github' }
 
 let g:airline_powerline_fonts = 1

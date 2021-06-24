@@ -79,7 +79,7 @@ Bundle 'maxmellon/vim-jsx-pretty'
 
 " CoC
 Bundle 'neoclide/coc.nvim', {'branch': 'release'}
-" Bundle 'scalameta/coc-metals'
+Bundle 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -100,11 +100,11 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'groenewege/vim-less'
 
 " colorschemes
+" Bundle 'sheerun/vim-polyglot'
 Bundle 'cormacrelf/vim-colors-github'
 Bundle 'phanviet/vim-monokai-pro'
 Bundle 'herrbischoff/cobalt2.vim'
 Bundle 'haishanh/night-owl.vim'
-
 
 " apperance
 Bundle 'vim-airline/vim-airline'

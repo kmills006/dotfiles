@@ -1,4 +1,4 @@
-let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json', 'coc-metals', 'coc-prettier']
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json', 'coc-prettier', 'coc-eslint']
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
