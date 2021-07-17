@@ -1,7 +1,16 @@
-let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json', 'coc-prettier', 'coc-eslint']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json']
 
-" Prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" Add CoC Prettier if prettier is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+
+  command! -nargs=0 Prettier :CocCommand prettier.formatFile
+endif
+
+" Add CoC ESLint if ESLint is installed
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
 
 " Show autocomplete when Tab is pressed
 inoremap <silent><expr> <Tab> coc#refresh()
