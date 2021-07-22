@@ -74,4 +74,7 @@ nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
 " nnoremap <silent><nowait> <space>co  :<C-u>CocList outline<cr>
 
+" Show Actions
+nnoremap <silent><nowait> <space>g  :<C-u>CocAction<cr>
+
 command! -nargs=0 Outline :CocList outline
