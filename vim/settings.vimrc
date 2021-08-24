@@ -89,3 +89,6 @@
 autocmd BufNewFile,BufRead * :set iskeyword+=-
 autocmd BufNewFile,BufRead * :set iskeyword+=_
 autocmd BufNewFile,BufRead * :set iskeyword-=.
+
+" Folding
+set foldmethod=indent
