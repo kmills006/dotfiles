@@ -1,27 +1,57 @@
-# Requirement:
+# Dotfiles
 
-```
-# the default vim from mac does not work for clipboard
-# https://evertpot.com/osx-tmux-vim-copy-paste-clipboard
-brew install vim
-brew install reattach-to-user-namespace
-brew install the_silver_searcher
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-```
+## Install
 
-# Replace default dot files:
-```
-rm -f ~/.vimrc && ln -s ~/.stack.d/.vimrc ~/.vimrc
-rm -f ~/.zshrc && ln -s ~/.stack.d/.zshrc ~/.zshrc
-rm -f ~/.tmux.conf && ln -s ~/.stack.d/.tmux.conf ~/.tmux.conf
+[Homebrew](https://brew.sh)
 
-rm -f ~/.tmuxinator/default.yml && ln -s ~/.stack.d/tmuxinator/default.yml ~/.tmuxinator/default.yml
-mkdir -p ~/.tmuxinator/completion
-ln -s ~/.stack.d/tmuxinator/_tmuxinator ~/.tmuxinator/completion/_tmuxinator
-
-rm -f ~/.gitignore_global && ln -s ~/.stack.d/.gitignore_global ~/.gitignore_global
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-# Git ignore global
+[Oh My Zsh](https://ohmyz.sh)
+
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-git config --global core.excludesfile ~/.gitignore_global
+
+[Vundle](https://github.com/VundleVim/Vundle.vim)
+
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+[asdf](http://asdf-vm.com/guide/getting-started.html#_1-install-dependencies)
+
+```bash
+brew install asdf
+```
+
+[asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
+
+```bash
+brew install gpg
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs x.x.x
+asdf current nodejs x.x.x
+npm install yarn --global
+```
+
+[tmux](https://github.com/tmux/tmux/wiki)
+
+```bash
+brew install tmux
+```
+
+### Replace Defaults
+
+```bash
+./initialize
+```
+
+### Fix coc (open issue)
+
+```bash
+cd ~/.vim/bundle/coc.nvim
+yarn install
+yarn build
+```
