@@ -60,7 +60,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/unite.vim'
-" Bundle 'Chun-Yang/vim-snippets'
 Bundle 'Chun-Yang/auto-pairs'
 
 " javascript
@@ -79,7 +78,6 @@ Bundle 'maxmellon/vim-jsx-pretty'
 
 " CoC
 Bundle 'neoclide/coc.nvim', {'branch': 'release'}
-Bundle 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 " ruby
 Bundle 'rodjek/vim-puppet'
@@ -100,7 +98,6 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'groenewege/vim-less'
 
 " colorschemes
-" Bundle 'sheerun/vim-polyglot'
 Bundle 'cormacrelf/vim-colors-github'
 Bundle 'phanviet/vim-monokai-pro'
 Bundle 'herrbischoff/cobalt2.vim'
@@ -137,17 +134,8 @@ Bundle 'freitass/todo.txt-vim'
 "jsdoc
 Bundle 'heavenshell/vim-jsdoc'
 
-" dash
-Bundle 'rizzatti/dash.vim'
-
-" linting
-" Bundle 'dense-analysis/ale'
-
 " Markdown Preview
 Bundle 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-
-" Scala
-Plugin 'derekwyatt/vim-scala'
 
 " fzf
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
